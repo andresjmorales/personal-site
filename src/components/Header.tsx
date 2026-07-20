@@ -12,7 +12,7 @@ export function Header() {
     <header className="site-header">
       <div className="site-header-inner">
         <div className="site-header-brand">
-          <Link href="/" className="site-logo">
+          <Link href="/" className="site-logo" scroll>
             Andrés Morales
           </Link>
         </div>

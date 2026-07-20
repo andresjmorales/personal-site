@@ -5,6 +5,7 @@ import {
   Source_Serif_4,
   IBM_Plex_Mono,
 } from "next/font/google";
+import { ScrollManager } from "@/components/ScrollManager";
 import { site } from "@/lib/content";
 import "./globals.css";
 
@@ -52,7 +53,10 @@ export default function RootLayout({
       lang="en"
       className={`${display.variable} ${sans.variable} ${prose.variable} ${mono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ScrollManager />
+        {children}
+      </body>
     </html>
   );
 }

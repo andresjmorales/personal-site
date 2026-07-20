@@ -13,7 +13,7 @@
   --header-bg: rgb(42 42 42 / 88%);
   --shadow: 0 12px 40px rgb(0 0 0 / 35%);
   --font-ui: var(--font-body);
-  --header-offset: 6.5rem;
+  --header-offset: 7rem;
   color-scheme: dark;
 }
 
@@ -36,6 +36,8 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-offset);
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -173,8 +175,8 @@ a {
 .project-scroll {
   display: flex;
   gap: 1rem;
-  margin: 0 -1.25rem;
-  padding: 0.25rem 1.25rem 0.75rem;
+  margin: 0;
+  padding: 0.25rem 0 0.75rem;
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
@@ -282,8 +284,8 @@ a {
 .writing-scroll {
   display: flex;
   gap: 1rem;
-  margin: 0 -1.25rem;
-  padding: 0.25rem 1.25rem 0.75rem;
+  margin: 0;
+  padding: 0.25rem 0 0.75rem;
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
@@ -728,6 +730,11 @@ a {
 }
 
 @media (max-width: 640px) {
+  :root {
+    /* Stacked brand + nav is taller than the desktop header. */
+    --header-offset: 8.25rem;
+  }
+
   .site-header-inner {
     align-items: flex-start;
     flex-direction: column;
