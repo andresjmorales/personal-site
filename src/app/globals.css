@@ -537,6 +537,13 @@ a {
   color: var(--muted);
 }
 
+.editor-prose hr {
+  border: none;
+  height: 0;
+  margin: 1.6em 0 2em;
+  border-top: 1px solid color-mix(in srgb, var(--border) 75%, transparent);
+}
+
 .preview-fn {
   position: relative;
   font-size: inherit;
@@ -550,7 +557,9 @@ a {
   font-size: 0.7em;
   font-weight: 700;
   text-decoration: none;
-  vertical-align: super;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.25em;
   cursor: pointer;
 }
 
@@ -575,6 +584,16 @@ a {
   white-space: normal;
   box-shadow: 0 8px 24px rgb(0 0 0 / 35%);
   transform: translateX(-50%);
+}
+
+/* Invisible bridge so you can move from the marker into the tip (and click links). */
+.preview-fn-tip::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 12px;
 }
 
 .preview-fn:hover .preview-fn-tip,
@@ -669,6 +688,14 @@ a {
 }
 
 .preview-footnotes-body > *:last-child {
+  margin-bottom: 0;
+}
+
+.preview-footnotes-body p {
+  margin: 0 0 0.65em;
+}
+
+.preview-footnotes-body p:last-child {
   margin-bottom: 0;
 }
 

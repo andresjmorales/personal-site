@@ -14,30 +14,49 @@ function cloneHastChildren(
   return JSON.parse(JSON.stringify(children)) as Element["children"];
 }
 
+function brNode(): Element {
+  return { type: "element", tagName: "br", properties: {}, children: [] };
+}
+
 /**
  * Tips live in a <span>; block tags like <p> are invalid there and can make
  * browsers/HTML serializers blow up the rest of the document. Flatten to
- * phrasing content.
+ * phrasing content, preserving paragraph breaks as <br><br>.
  */
 function flattenTipChildren(
   children: Element["children"]
 ): Element["children"] {
   const out: Element["children"] = [];
+  let afterBlock = false;
+
   for (const child of cloneHastChildren(children)) {
-    if (child.type === "element" && child.tagName === "p") {
-      out.push(...flattenTipChildren(child.children));
-      out.push({ type: "text", value: " " });
+    // Footnote AST often has "\n" text nodes between blocks; ignoring them
+    // prevents a leading <br><br> (extra top whitespace) in every tip.
+    if (child.type === "text" && !child.value.trim()) {
       continue;
     }
-    if (child.type === "element" && (child.tagName === "div" || child.tagName === "li")) {
+    if (
+      child.type === "element" &&
+      (child.tagName === "p" || child.tagName === "div")
+    ) {
+      if (out.length > 0 || afterBlock) {
+        out.push(brNode(), brNode());
+      }
       out.push(...flattenTipChildren(child.children));
-      out.push({ type: "text", value: " " });
+      afterBlock = true;
+      continue;
+    }
+    if (child.type === "element" && child.tagName === "li") {
+      if (out.length > 0) out.push(brNode());
+      out.push(...flattenTipChildren(child.children));
+      afterBlock = true;
       continue;
     }
     if (child.type === "element") {
       child.children = flattenTipChildren(child.children);
     }
     out.push(child);
+    afterBlock = false;
   }
   return out;
 }

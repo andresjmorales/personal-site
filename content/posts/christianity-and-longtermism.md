@@ -1,5 +1,5 @@
 ---
-title: Christianiy and Longtermism
+title: Christianity and Longtermism
 subtitle:
 author: Andrés Morales
 date: 2022-11-05

@@ -30,7 +30,7 @@ Essay body with GFM footnotes[^1].
 
 | Field | Required | Notes |
 | --- | --- | --- |
-| `title` | yes | Falls back to filename slug if missing |
+| `title` | yes | Falls back to filename slug if missing. Quote if it contains a colon: `title: "Abolition of Man: The Review"` |
 | `subtitle` | no | Shown on the article page |
 | `author` | no | Shown on the article page |
 | `date` | no | `YYYY-MM-DD`; sorts Writing cards |
