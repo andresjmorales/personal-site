@@ -1,2 +1,1 @@
-# personal-site
-Personal site of Andrés Morales
+Personal site.
