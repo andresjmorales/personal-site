@@ -1,3 +1,4 @@
+import { CardRail } from "@/components/CardRail";
 import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
 import { WritingCard } from "@/components/WritingCard";
@@ -37,19 +38,19 @@ export default function HomePage() {
 
         <section id="projects" className="section">
           <h2 className="section-title">Projects</h2>
-          <div className="project-scroll" role="list">
+          <CardRail className="project-scroll" role="list">
             {projects.map((project) => (
               <div key={project.slug} className="project-scroll-item" role="listitem">
                 <ProjectCard project={project} />
               </div>
             ))}
-          </div>
+          </CardRail>
         </section>
 
         <section id="writing" className="section">
           <h2 className="section-title">Writing</h2>
           {posts.length > 0 ? (
-            <div className="writing-scroll" role="list">
+            <CardRail className="writing-scroll" role="list">
               {posts.map((post) => (
                 <div
                   key={post.slug}
@@ -59,7 +60,7 @@ export default function HomePage() {
                   <WritingCard post={post} />
                 </div>
               ))}
-            </div>
+            </CardRail>
           ) : null}
         </section>
 

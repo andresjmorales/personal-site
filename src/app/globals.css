@@ -172,7 +172,8 @@ a {
   gap: 1rem;
 }
 
-.project-scroll {
+.project-scroll,
+.writing-scroll {
   display: flex;
   gap: 1rem;
   margin: 0;
@@ -182,6 +183,30 @@ a {
   scroll-snap-type: x mandatory;
   scrollbar-color: var(--border) transparent;
   -webkit-overflow-scrolling: touch;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project-scroll,
+  .writing-scroll {
+    cursor: grab;
+  }
+
+  .project-scroll.is-dragging,
+  .writing-scroll.is-dragging {
+    cursor: grabbing;
+    user-select: none;
+    scroll-snap-type: none;
+  }
+
+  .project-scroll a,
+  .writing-scroll a {
+    cursor: pointer;
+  }
+
+  .project-scroll.is-dragging a,
+  .writing-scroll.is-dragging a {
+    cursor: grabbing;
+  }
 }
 
 .project-scroll-item {
@@ -280,18 +305,6 @@ a {
 }
 
 /* ——— Writing cards ——— */
-
-.writing-scroll {
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0.25rem 0 0.75rem;
-  overflow-x: auto;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
-  scrollbar-color: var(--border) transparent;
-  -webkit-overflow-scrolling: touch;
-}
 
 .writing-scroll-item {
   flex: 0 0 min(280px, 82vw);

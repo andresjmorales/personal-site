@@ -63,7 +63,7 @@ export const projects: Project[] = [
     slug: "cognote",
     title: "CogNote",
     description:
-      "Open-source music notation and concept learning platform.",
+      "Open-source, self-hostable studio management for private music teachers.",
     href: "https://cognote.studio/",
     github: "https://github.com/andresjmorales/cognote",
     image: "/projects/cognote.svg",
