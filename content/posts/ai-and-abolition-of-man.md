@@ -11,7 +11,7 @@ tags:
 canonical: https://andresmorales.substack.com/p/ai-and-the-abolition-of-man
 ---
 
-![https://www.kickstarter.com/projects/strangedeath/abolition-of-man-the-first-ai-illustrated-comic-returns](https://substackcdn.com/image/fetch/$s_!K8UD!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2022979f-5075-4fbf-b445-af2a2ca87a8c_1552x873.avif "https://www.kickstarter.com/projects/strangedeath/abolition-of-man-the-first-ai-illustrated-comic-returns")
+![https://www.kickstarter.com/projects/strangedeath/abolition-of-man-the-first-ai-illustrated-comic-returns](/writing/ai-and-abolition-of-man/2022979f-5075-4fbf-b445-af2a2ca87a8c_1552x873.avif "https://www.kickstarter.com/projects/strangedeath/abolition-of-man-the-first-ai-illustrated-comic-returns")
 
 **Carson Grubaugh, Midjourney AI, Sean Michael Robinson, and Luciano Floridi, *The Abolition of Man: Deluxe Edition* (St. Paul, Minnesota: Living the Line, 2023). 228 pages. $35.00.**
 
@@ -74,7 +74,7 @@ Basically: let’s not fill the Internet with slop! The essay continues with a b
 
 For some reason this reminded me of a 1988 *Batman* comic book storyline by Jim Starlin called “A Death in the Family” where the fate of Batman’s sidekick Robin (Jason Todd) was [placed in the hands of readers](https://www.comicsbeat.com/the-lives-and-death-of-jason-todd-an-oral-history-of-the-second-robin-and-a-death-in-the-family/). In *Batman* #427, Joker beats Robin almost to death. On the back cover, readers were told they could call in to one of two numbers—one if they wanted him to live, the other if they wanted him to die—whichever number received more calls, that event would play out in the next issue. Readers could directly influence the canon. Over 10,000 calls were made, and ultimately, by only a margin of 72 votes, readers voted to kill off Robin. And in the comic world where characters die and resurrect constantly, his death lasted—the character didn’t return for 16 years, when he came back as the Red Hood.[^17]
 
-![https://batman-news.com/2023/12/13/batman-428-robin-lives-1-review-and-retrospective/](https://substackcdn.com/image/fetch/$s_!awpe!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6bfc781-a9b3-44f6-8cc2-d7de75fbe115_674x1028.jpeg "https://batman-news.com/2023/12/13/batman-428-robin-lives-1-review-and-retrospective/")
+![https://batman-news.com/2023/12/13/batman-428-robin-lives-1-review-and-retrospective/](/writing/ai-and-abolition-of-man/d6bfc781-a9b3-44f6-8cc2-d7de75fbe115_674x1028.jpg "https://batman-news.com/2023/12/13/batman-428-robin-lives-1-review-and-retrospective/")
 
 Speaking of death—the dead QR code. It is a strange thing to be reading a physical book and then end up reflecting on [link rot](https://en.wikipedia.org/wiki/Link_rot). Link rot is the issue of hyperlinks breaking. Someone might link to a good article on a webpage, but in a few years, when that link is clicked, the link is dead, rotted away, a 404. I’ve been concerned about link rot for a long time—as someone who has written articles online, it’s frustrating because I don’t want my readers to have to search for a working readable page.[^18] Link rot is an interesting problem to me because the hyperlink is the foundation of the modern web. In 1989 Tim Berners-Lee developed HTTP (HyperText Transfer Protocol) and HTML (HyperText Markup Language) at CERN which became the World Wide Web. [Hypertext](https://en.wikipedia.org/wiki/Hypertext) is “text which is not constrained to be linear … which contains links to other texts” ([hyperlinks](https://en.wikipedia.org/wiki/Hyperlink)).[^19] Before Berners-Lee, there was also Father Roberto Busa, the Jesuit priest who “[invented](https://www.americamagazine.org/signs-times/2011/08/15/jesuit-who-invented-hypertext/)” hypertext, although it might be more accurate to call him its “spiritual father.” In 1946 Busa began working on the *Index Thomisticus*, a concordance of all of Thomas Aquinas’s corpus, allowing non-linear text traversal. It was the first real hypertext project before hypertext. Later in the 1960s, Ted Nelson coined the term “hypertext” and created the first hypertext project called [Project Xanadu](https://www.xanadu.net/). Apparently Project Xanadu’s administrators today call out the World Wide Web, which “trivialises our original hypertext model with one-way ever-breaking links and no management of version or contents.”[^20] (Project Xanadu uses [xanalinks](https://xanadu.com/xanaLinks.html) instead.) Hypertext would go through several iterations before Berners-Lee’s HTTP and HTML combo. Berners-Lee’s WWW took off and obviously became the massive information system that everyone knows. It’s just unfortunate that we still run into the problem of ever-breaking links.
 
@@ -96,7 +96,7 @@ Exactly. Floridi then reviews the philosophical anthropologies of Greek and Roma
 
 I have a complicated relationship with the subject of privacy. At various times in my life, as a kid who grew up in the Silicon Valley in the 2000s, I have been obsessed with online privacy rights. I remember having strong opinions on [net neutrality](https://en.wikipedia.org/wiki/Net_neutrality) back in the day. I’ve used VPNs, torrenting, encrypted messaging, Linux, Tor, crypto. But ultimately at some point a few years ago I realized I was kind of idolizing privacy, and decided to take a more holistic Christian view of it. Floridi attributes to Augustine the idea that “good persons have nothing to hide, to God or to others.”[^23] That’s kind of the “normie” position but I guess that’s basically where I stand for now.
 
-![Actual actual reality: nobody cares about his secrets. (Also, I would be hard-pressed to find that wrench for $5.) [From https://xkcd.com/538/]](https://substackcdn.com/image/fetch/$s_!FDA_!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F45821f3b-c6ff-4d91-805a-461d3a3a84d8_448x274.png "Actual actual reality: nobody cares about his secrets. (Also, I would be hard-pressed to find that wrench for $5.) [From https://xkcd.com/538/]")
+![Actual actual reality: nobody cares about his secrets. (Also, I would be hard-pressed to find that wrench for $5.) [From https://xkcd.com/538/]](/writing/ai-and-abolition-of-man/45821f3b-c6ff-4d91-805a-461d3a3a84d8_448x274.png "Actual actual reality: nobody cares about his secrets. (Also, I would be hard-pressed to find that wrench for $5.) [From https://xkcd.com/538/]")
 
 ## 3. Maria’s Story
 
@@ -106,7 +106,7 @@ I don’t understand *Maria’s Story*. Apparently Grubaugh put just the phrase 
 
 *HodTech* is an old idea of Carson Grubaugh, and coauthor Sean Michael Robinson helps complete the story (it’s a two-parter). It also uses AI art. The story takes place in a kind of dystopian nightmare world. People brush their teeth with “toothworm,” eat “mignon paste,” and use a kind of newspeak—man is “mas,” woman is “fem,” all personal pronouns are “sun,” and God is “Hod.” The story follows Jasper, who works for the HodTech corporation. Their mission is to ’mute (short for transmute) old paper data into new data in ways that the mysterious HodBots can’t. The “data” are things like “a complete run of Singaporean parking tickets” or “time-applied, mapped extinct Avarian migratory patterns.”[^24] I found some of the ways that they try to ’mute this data amusing. “What if we took each form and licked it. Then catalogued the memory that attended the licking?” “Or, we could crumple each form, while recording the audio. Then play the recording at different volumes, while noting your heart rate.”[^25] They made me think of the methods in which random number generation is accomplished. Most digital randomness is only pseudo-random because they rely on some formula to simulate randomness. [Random.org](http://Random.org) has a good [explanation](https://www.random.org/randomness/) of this, and how they solve this problem by using physical atmospheric noise, which is a chaotic system and its data can’t be replicated on demand.
 
-![](https://substackcdn.com/image/fetch/$s_!k6FF!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4547ca7e-3f1b-4ec1-9caa-cfbb05f6b764_680x257.jpeg)
+![](/writing/ai-and-abolition-of-man/4547ca7e-3f1b-4ec1-9caa-cfbb05f6b764_680x257.jpg)
 
 The purpose of Jasper’s job is reducing entropy in the world, by hoping that the random transmutations he finds might result in meaningful order. If it weren’t for him, that old unused data would spiral into disorder, increasing entropy endlessly. In a relatively abrupt ending though, Jasper becomes disillusioned with his job, starts a revolution, and then kills all the coworkers that join him. Finally, he calls his brother looking for a construction job.
 
@@ -132,13 +132,13 @@ Before turning to *TAOMDE*, let me also say some things about C.S. Lewis’s ori
 
 One small issue I have with the format is the use of standard comic book text in all upper case (this is relatively common with comic books, but nowadays you see sentence case used a lot too). Grubaugh did not transfer over capitalization nor italicization (for emphasis or Latin phrases) that would clarify the text. There are also a few typos and missing quotation marks, but nothing that makes it too hard to read. From the looks of it, the text was not lettered by hand, but a comic book font was used digitally. So I do question whether Grubaugh actually re-read everything for clarity, because there are places like this where the text is unclear.
 
-![](https://substackcdn.com/image/fetch/$s_!NTwF!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fadbe6224-1fbb-4972-ad9a-f252b403b5fa_757x783.png)
+![](/writing/ai-and-abolition-of-man/adbe6224-1fbb-4972-ad9a-f252b403b5fa_757x783.png)
 
 And here are the panels preceding the sentence in question.
 
-![](https://substackcdn.com/image/fetch/$s_!uhW2!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2957fc9b-a55a-4507-a16d-8f5f4e30e5af_961x1012.png)
+![](/writing/ai-and-abolition-of-man/2957fc9b-a55a-4507-a16d-8f5f4e30e5af_961x1012.png)
 
-![](https://substackcdn.com/image/fetch/$s_!xjaV!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff0d60827-5fd2-4d58-9116-5b3c2ecf136a_1276x669.png)
+![](/writing/ai-and-abolition-of-man/f0d60827-5fd2-4d58-9116-5b3c2ecf136a_1276x669.png)
 
 Here is the whole paragraph from my HarperCollins edition with the other panels’ text included (emphasis original):
 
@@ -152,7 +152,7 @@ Personally I am not sure how much the art adds to the experience of reading Lewi
 
 But that is just my subjective feeling (ha ha) about the art. I guess that is part of the point Grubaugh is making then right? Does AI art lose something? Do the intentions of the artist matter? Can we say that this art is objectively bad because it was made by a machine? Does any of this relate to Lewis’s concern about objective values? I loosely hold to the “death of the author” thesis—as in, meaning comes from interpretation (the gleaned meaning), not necessarily the author’s intentions.[^30] A few years ago I tried to run a social experiment in the group chat for the Bible study I lead. I sent a message like, “recently saw this painting and was really moved by it, just wanted to share.” This was the picture I shared with the message:
 
-![](https://substackcdn.com/image/fetch/$s_!5vB2!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F869e7b4c-e3d1-4d09-b404-dfae8f31c214_261x382.jpeg)
+![](/writing/ai-and-abolition-of-man/869e7b4c-e3d1-4d09-b404-dfae8f31c214_261x382.jpg)
 
 What do *you* feel when you see this piece of art?
 
@@ -162,19 +162,19 @@ I’m just asking a lot of questions here. There are lots of people with really 
 
 I’ll leave these questions to be debated by others. Suffice it to say, I would simply say that the AI-generated art in *TAOMDE* added *something* to the reading experience. At times it felt like it enhanced my feelings of disgust and disturbance at the content of the dystopian parts of the essay, other times I mostly ignored it. Here are some more samples of the AI art in *TAOMDE*, so maybe you can be the judge.
 
-![](https://substackcdn.com/image/fetch/$s_!J11K!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1fe541e7-87a6-46c5-963a-40c328b1d8e2_832x876.png)
+![](/writing/ai-and-abolition-of-man/1fe541e7-87a6-46c5-963a-40c328b1d8e2_832x876.png)
 
-![](https://substackcdn.com/image/fetch/$s_!es6y!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8f9c8111-9e49-44f5-85fe-a5bb7c128340_782x823.png)
+![](/writing/ai-and-abolition-of-man/8f9c8111-9e49-44f5-85fe-a5bb7c128340_782x823.png)
 
-![](https://substackcdn.com/image/fetch/$s_!Ydj9!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faf9f0dca-641a-4570-925a-69f9bdb5041f_832x869.png)
+![](/writing/ai-and-abolition-of-man/af9f0dca-641a-4570-925a-69f9bdb5041f_832x869.png)
 
-![](https://substackcdn.com/image/fetch/$s_!W8Vb!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F20432c48-0bf9-4895-aa2f-c17ec29d4731_815x856.png)
+![](/writing/ai-and-abolition-of-man/20432c48-0bf9-4895-aa2f-c17ec29d4731_815x856.png)
 
 Pretty uncanny. While I don’t immediately get a sense of disgust at AI art that many critics seem to, I do fear a future where we have AI slop everywhere, and no one can tell the difference anymore between AI and real content. (Wait, isn’t that basically what Facebook has become?)
 
 After finishing *TAOMDE*, I decided to read Lewis’s whole *The Abolition of Man*. I bought a physical copy, which was promptly destroyed (before I could read a word) by Stella, my German Shepherd. Below is a picture of the destruction. (I feel like there’s something clever I could say here, but I’ve got nothing).
 
-![](https://substackcdn.com/image/fetch/$s_!rcpa!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd2a68966-4067-4381-8242-df2c047180ff_3897x3000.jpeg)
+![](/writing/ai-and-abolition-of-man/d2a68966-4067-4381-8242-df2c047180ff_3897x3000.jpg)
 
 I also wanted a Kindle edition. The HarperCollins edition was almost $10, so I wanted to save some money. First I tried buying a 99 cent Kindle edition, but then I realized that it had a bunch of typos. I found another 99 cent version and bought that, but it was even worse. It made me think, whose fault is it that there are a bunch of bootleg copies of C.S. Lewis’s beloved work on the Kindle store? Come to think of it, it’s not even clear to me the legality of the work I’m reviewing. Is *TAOMDE* even legal? *The Abolition of Man* was published in 1943, so according to [U.S. copyright law](https://guides.library.cornell.edu/copyright/publicdomain), it would not enter the public domain until 95 years after its publication date, so on January 1, 2039.[^32] The C.S. Lewis estate (administered by The C.S. Lewis Company Ltd.) retains the copyright until that time. Is feeding every sentence of a work into an AI and then publishing it as a standalone comic “fair use” or “parody”? The copyright page says “The Abolition of Man Deluxe Edition is not endorsed by or associated with the estate of C.S. Lewis, the copyright holders of Lewis’ lectures and essays. Any and all copyright and adaptation rights to Lewis’ works are reserved by the estate of C.S. Lewis.” *TAOMDE*’s publisher is Living The Line, which is U.S.-based, and *TAOMDE* was released on September 5, 2023. The most relevant case, [*Andy Warhol Foundation for the Visual Arts, Inc. v. Goldsmith*](https://www.oyez.org/cases/2022/21-869) was decided by the Supreme Court in May 2023, which considered the doctrine of “transformative use,” a component of “fair use.” Fair use considers four factors: “(1) the purpose and character of the use, including whether such use is of a commercial nature or is for nonprofit educational purposes; (2) the nature of the copyrighted work; (3) the amount and substantiality of the portion used in relation to the copyrighted work as a whole; and (4) the effect of the use upon the potential market for or value of the copyrighted work.”[^33] In the end, the court held in *Warhol v. Goldsmith* that those conditions were not met, and that minor alterations don’t make a use transformative when the derivative work is commercial and serves essentially the same purpose as the original. Because Grubaugh uses the full text of the essay, this would be judged with even more scrutiny. Even if the meaning of the work was completely different, transformative use would require *TAOMDE* to serve a different purpose or market than the original. The Lewis estate could say “illustrated editions of Lewis’s work are a potential licensing market for us,” and therefore claim that *TAOMDE* infringes on their copyright.[^34] So…
 
@@ -214,7 +214,7 @@ One concerning direction of the focus on natural affection is the allure of race
 
 So, those are just some of my random reflections on the *Tao* and its relation to the state of one niche corner of conservative Christendom—a retrieval of natural theology, natural good, and natural affection. Like I said, just experimental.
 
-![https://en.wikipedia.org/wiki/Laozi#/media/File:Zhang_Lu-Laozi_Riding_an_Ox.jpg](https://substackcdn.com/image/fetch/$s_!l4Ym!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0d3147b-8060-4fb7-9f29-aa494c906fab_402x733.jpeg "https://en.wikipedia.org/wiki/Laozi#/media/File:Zhang_Lu-Laozi_Riding_an_Ox.jpg")
+![https://en.wikipedia.org/wiki/Laozi#/media/File:Zhang_Lu-Laozi_Riding_an_Ox.jpg](/writing/ai-and-abolition-of-man/e0d3147b-8060-4fb7-9f29-aa494c906fab_402x733.jpg "https://en.wikipedia.org/wiki/Laozi#/media/File:Zhang_Lu-Laozi_Riding_an_Ox.jpg")
 Lao Tzu, founder of Taoism
 
 One thought I had while reading *The Abolition of Man* was how prescient it felt. It seems especially well-suited to our moment right now—not only because of the meaning crisis, but even more so as we witness the rise of what might be the most transformative technologies humans will ever create. I find it hard to read this passage and not think about the current moment of rapid technological progress:

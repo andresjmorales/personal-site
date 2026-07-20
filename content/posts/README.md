@@ -44,7 +44,15 @@ Supported extensions: `.md`, `.mdx`.
 
 Substack paste often leaves CDN URLs like `https://substackcdn.com/image/fetch/...`. Those usually work for a while, but they’re not yours, Substack can change paths, tighten hotlinking, or drop assets.
 
-**Recommended for this site:** download images into the repo and point markdown at local paths.
+**Recommended for this site:** download images into the repo and point markdown at local paths (faster, no CDN rot).
+
+```bash
+# from repo root — one post or all posts
+npm run localize-images -- my-essay
+npm run localize-images
+```
+
+That writes files under `public/writing/<slug>/` and rewrites the markdown URLs.
 
 ```text
 public/writing/<slug>/hero.jpg

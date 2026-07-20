@@ -10,7 +10,7 @@ tags:
 canonical: https://andresmorales.substack.com/p/a-christian-perspective-on-ai-sentience
 ---
 
-![](https://substackcdn.com/image/fetch/$s_!uHtU!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcf1e7266-ee04-4b59-a183-8a5de99486e0_1469x1033.png)
+![](/writing/christian-perspective-ai-sentience/cf1e7266-ee04-4b59-a183-8a5de99486e0_1469x1033.png)
 
 I’m a Christian and a fan of [effective altruism](https://www.effectivealtruism.org/). A key tenet of effective altruism is expanding the moral circle of concern. That is why effective altruists care for the distant poor, farmed animals, and people in the far future. Some effective altruists have considered the possibility of artificial intelligence (AI) sentience as a potential cause area. Now that everyone is talking about AI, the idea could gain traction. I think most Christians would immediately reject this, but I want to examine the arguments and offer a Christian perspective, even if mainstream concern over AI sentience never materializes. Part 1 will go over some philosophy of mind and Christian anthropology, while Part 2 will go over AI fundamentals and use the frameworks from Part 1 to evaluate whether AI sentience is possible or morally relevant. My thesis is that AI sentience, while theoretically possible under naturalism, is not compatible with a Christian worldview.
 
@@ -62,7 +62,7 @@ God originally put man in the garden to work and keep it. Our God-given rational
 
 At this point we understand what a human is and the attributes that distinguish humankind from the rest of creation. According to my best guesses, I’ve listed these sentience-related attributes and assignments to creation in a table below. The unknown assignments of AI will be the topic of Part 2 of this essay.
 
-![](https://substackcdn.com/image/fetch/$s_!09nx!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5c130233-eaef-4dc8-868a-634bb9bccfec_930x754.png)
+![](/writing/christian-perspective-ai-sentience/5c130233-eaef-4dc8-868a-634bb9bccfec_930x754.png)
 
 # **Part 2: AI**
 

@@ -570,7 +570,7 @@ a {
   z-index: 5;
   display: none;
   width: max-content;
-  max-width: min(20rem, 80vw);
+  max-width: min(20rem, calc(100vw - 1.5rem));
   padding: 0.5rem 0.65rem;
   border: 1px solid var(--border);
   border-radius: 6px;
@@ -583,7 +583,8 @@ a {
   text-align: left;
   white-space: normal;
   box-shadow: 0 8px 24px rgb(0 0 0 / 35%);
-  transform: translateX(-50%);
+  /* --tip-shift-x set by FootnoteTipBounds so tips stay on-screen. */
+  transform: translateX(calc(-50% + var(--tip-shift-x, 0px)));
 }
 
 /* Invisible bridge so you can move from the marker into the tip (and click links). */

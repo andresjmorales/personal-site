@@ -10,7 +10,7 @@ tags:
 canonical: https://andresmorales.substack.com/p/christianity-and-longtermism
 ---
 
-![](https://substackcdn.com/image/fetch/$s_!Naxt!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F04cd53de-6a43-4948-9bc7-d82eda9e27f8_1024x714.png)
+![](/writing/christianity-and-longtermism/04cd53de-6a43-4948-9bc7-d82eda9e27f8_1024x714.png)
 Image made with [DALL·E 2](https://openai.com/dall-e-2/)
 
 I’m a Christian and a fan of [effective altruism](https://www.effectivealtruism.org/) (EA). (To learn about EA from a Christian perspective, watch [this 5-minute intro video](https://www.youtube.com/watch?v=Unt9iHFH5-E), or [a longer one here](https://www.youtube.com/watch?v=EARVH36MTog)!) Effective altruism, and a newer idea within it called [longtermism](https://www.vox.com/future-perfect/23298870/effective-altruism-longtermism-will-macaskill-future), recently received some mainstream attention with the publishing of [*What We Owe The Future*](https://whatweowethefuture.com/) by Will MacAskill. The group [Effective Altruism for Christians](https://www.eaforchristians.org/) (EACH) is engaging with longtermism on its Substack, [Christ and Counterfactuals](https://christandcounterfactuals.substack.com). I was asked to provide a thousand-word Christian case against longtermism, specifically *strong longtermism*, [defined as](https://globalprioritiesinstitute.org/summary-the-case-for-strong-longtermism) “the view that the most important feature of our actions today is their impact on the far future.”

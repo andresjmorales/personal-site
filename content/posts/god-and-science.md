@@ -10,7 +10,7 @@ tags:
 canonical: https://andresmorales.substack.com/p/god-makes-science-possible-and-reliable
 ---
 
-![](https://substackcdn.com/image/fetch/$s_!VVyK!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3bc84772-447a-4974-b3c0-2ef0ddcdf4f8_2274x1506.jpeg)
+![](/writing/god-and-science/3bc84772-447a-4974-b3c0-2ef0ddcdf4f8_2274x1506.jpg)
 
 My argument in a nutshell: a Christian worldview relies on scriptures, which make historical and theological claims which require interpretation. God’s general revelation helps in this interpretation, and he also gives us science as a tool to further understand general revelation, which demonstrates that science is valid and reliable. We also implicitly accept the science that underlies the technology which we rely on every day. Science is highly valuable, so when scientific methods produce additional findings, we shouldn’t immediately be distrustful of them. I believe Christians ought to have a higher regard for science.
 

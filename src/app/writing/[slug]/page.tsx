@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { FootnoteTipBounds } from "@/components/FootnoteTipBounds";
 import { Header } from "@/components/Header";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { renderMarkdown } from "@/lib/markdown";
@@ -63,6 +64,7 @@ export default async function WritingPage({ params }: PageProps) {
   return (
     <>
       <ScrollToTop />
+      <FootnoteTipBounds />
       <Header />
       <main className="article-shell">
         <article className="document-preview-article">

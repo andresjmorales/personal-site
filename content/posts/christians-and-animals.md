@@ -10,7 +10,7 @@ tags:
 canonical: https://andresmorales.substack.com/p/how-should-christians-view-animals
 ---
 
-![](https://substackcdn.com/image/fetch/$s_!OK6w!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F052450a2-84a2-4791-ac40-e030274e08c0_1024x681.jpeg)
+![](/writing/christians-and-animals/052450a2-84a2-4791-ac40-e030274e08c0_1024x681.jpg)
 
 ### Introduction
 
