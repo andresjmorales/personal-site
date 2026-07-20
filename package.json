@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "localize-images": "node scripts/localize-substack-images.mjs"
+    "localize-images": "node scripts/localize-substack-images.mjs",
+    "remap-substack-links": "node scripts/remap-substack-links.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

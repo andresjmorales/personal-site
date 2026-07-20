@@ -7,7 +7,7 @@ description: # Used once in 2022
 tags:
   - theology
   - liturgy
-canonical: https://andresmorales.substack.com/p/ai-and-the-abolition-of-man-excursus
+canonical: https://andresmorales.substack.com/p/a-passover-meal-liturgy
 ---
 
 Today is Maundy Thursday, the day of Holy Week which commemorates Jesus’ Last Supper. The Catholic church and some high church denominations celebrate the day with the Mass of the Lord’s Supper or a similar service, but I couldn’t find an equivalent common in Protestantism. I did read about increasing interest among Protestants to celebrate the day with a Christian Seder, or more accurately a Messianic Passover Seder. However some Jews consider this [cultural appropriation](https://www.christianitytoday.com/ct/2017/march-web-only/jesus-didnt-eat-seder-meal.html) and [offensive](https://forward.com/opinion/443606/please-do-not-host-a-christian-seder/). There are [arguments against](https://www.christianitytoday.com/ct/2017/april-web-only/why-christians-can-celebrate-passover-too.html) some of these claims, but it is clear that Passover Seders are uniquely Jewish in that they were developed after Christianity branched from Judaism. Jesus would have been unfamiliar with the traditions that Jews today follow during the meal since the Seder Haggadah was developed later in history.

@@ -32,3 +32,13 @@ npm run localize-images -- --dry-run
 ```
 
 Files land in `public/writing/<slug>/`; markdown becomes `![](/writing/<slug>/…)`.
+
+### Remap Substack cross-links
+
+Turn links to your own Substack posts into on-site `/writing/…` links (uses each post’s `canonical:` plus fuzzy slug matching):
+
+```bash
+node scripts/remap-substack-links.mjs           # report
+node scripts/remap-substack-links.mjs --apply   # write
+node scripts/remap-substack-links.mjs --apply --map old-substack-slug=local-slug
+```

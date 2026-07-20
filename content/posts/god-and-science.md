@@ -14,7 +14,7 @@ canonical: https://andresmorales.substack.com/p/god-makes-science-possible-and-r
 
 My argument in a nutshell: a Christian worldview relies on scriptures, which make historical and theological claims which require interpretation. God’s general revelation helps in this interpretation, and he also gives us science as a tool to further understand general revelation, which demonstrates that science is valid and reliable. We also implicitly accept the science that underlies the technology which we rely on every day. Science is highly valuable, so when scientific methods produce additional findings, we shouldn’t immediately be distrustful of them. I believe Christians ought to have a higher regard for science.
 
-Naturally I will presuppose natural theology and the light of reason in this essay.[^1] I also have a more specific critique of presuppositionalism and its collapse into evidentialism in [this essay](https://andresmorales.substack.com/p/presuppositionalism-eventually-collapses).
+Naturally I will presuppose natural theology and the light of reason in this essay.[^1] I also have a more specific critique of presuppositionalism and its collapse into evidentialism in [this essay](/writing/presuppositionalism).
 
 ## God’s Two Books
 
