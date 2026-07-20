@@ -30,7 +30,8 @@ export const about = {
     [
       {
         type: "text",
-        text: "Hi, my name is Andrés. I’m a software engineer based in Austin, originally from the Bay Area.",
+        text: "Hi, my name is Andrés. I’m a software engineer based in Austin, originally from the Bay Area.\
+        I like writing about theological and technological topics, as well as making open source tools.",
       },
     ],
     [
@@ -47,6 +48,12 @@ export const about = {
         href: "https://mlf.org/community-first",
       },
       { type: "text", text: "." },
+    ],
+    [
+      {
+        type: "text",
+        text: "I also enjoy playing pickleball, and watching movies with my wife.",
+      },
     ],
   ] satisfies BioPart[][],
 };
