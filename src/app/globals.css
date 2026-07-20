@@ -311,14 +311,12 @@ a {
   text-decoration: none;
   transition:
     transform 220ms ease,
-    border-color 220ms ease,
-    box-shadow 220ms ease;
+    border-color 220ms ease;
 }
 
 .writing-card:hover {
   transform: translateY(-2px);
   border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
-  box-shadow: var(--shadow);
 }
 
 .writing-card-meta {
@@ -351,7 +349,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem 1.25rem;
-  font-family: var(--font-ui), system-ui, sans-serif;
+  font-family: var(--font-display), Georgia, serif;
   font-size: 1rem;
 }
 
