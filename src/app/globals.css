@@ -7,9 +7,9 @@
   --muted: #a3a09a;
   --border: #404040;
   --panel: #333333;
-  --accent: #5ec4b6;
-  --accent-soft: #1a3330;
-  --target: #243836;
+  --accent: #c45c5c;
+  --accent-soft: #331a1a;
+  --target: #382424;
   --header-bg: rgb(42 42 42 / 88%);
   --shadow: 0 12px 40px rgb(0 0 0 / 35%);
   --font-ui: var(--font-body);
@@ -46,7 +46,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-body), Georgia, "Times New Roman", serif;
   background:
-    radial-gradient(1100px 480px at 12% -8%, rgb(94 196 182 / 8%), transparent 55%),
+    radial-gradient(1100px 480px at 12% -8%, rgb(196 92 92 / 8%), transparent 55%),
     radial-gradient(900px 400px at 92% 0%, rgb(0 0 0 / 35%), transparent 50%),
     linear-gradient(180deg, var(--background) 0%, var(--background-deep) 100%);
   background-attachment: fixed;
@@ -510,6 +510,12 @@ a {
 
 .editor-prose a {
   color: var(--accent);
+  text-decoration: none;
+}
+
+.editor-prose a:hover:not(.preview-fn-ref) {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 .editor-prose pre {
