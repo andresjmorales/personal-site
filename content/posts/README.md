@@ -35,7 +35,7 @@ Essay body with GFM footnotes[^1].
 | `author` | no | Shown on the article page |
 | `date` | no | `YYYY-MM-DD`; sorts Writing cards |
 | `description` | no | Homepage card blurb (else subtitle) |
-| `tags` | no | List or comma-separated; reserved for later UI |
+| `tags` | no | List or comma-separated; shown in the article ⓘ details |
 | `canonical` | no | Original URL (aliases: `substack`, `source`) |
 
 Supported extensions: `.md`, `.mdx`.

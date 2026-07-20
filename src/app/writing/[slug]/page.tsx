@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { ArticleMeta } from "@/components/ArticleMeta";
 import { FootnoteTipBounds } from "@/components/FootnoteTipBounds";
 import { Header } from "@/components/Header";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { renderMarkdown } from "@/lib/markdown";
-import { getPostBySlug, getPostSlugs } from "@/lib/posts";
+import { countWords, getPostBySlug, getPostSlugs } from "@/lib/posts";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -60,6 +61,7 @@ export default async function WritingPage({ params }: PageProps) {
 
   const bodyHtml = await renderMarkdown(post.content);
   const dateLabel = formatDate(post.date);
+  const wordCount = countWords(post.content);
 
   return (
     <>
@@ -76,11 +78,13 @@ export default async function WritingPage({ params }: PageProps) {
             {post.author ? (
               <p className="document-preview-author">{post.author}</p>
             ) : null}
-            {dateLabel ? (
-              <p className="document-preview-date">
-                <time dateTime={post.date || undefined}>{dateLabel}</time>
-              </p>
-            ) : null}
+            <ArticleMeta
+              date={post.date}
+              dateLabel={dateLabel}
+              wordCount={wordCount}
+              tags={post.tags}
+              canonical={post.canonical}
+            />
           </header>
           <div
             className="editor-prose"

@@ -392,16 +392,129 @@ a {
   line-height: 1.45;
 }
 
-.document-preview-author,
-.document-preview-date {
+.document-preview-author {
   margin: 0 0 0.35rem;
   color: var(--muted);
   font-family: var(--font-ui), system-ui, sans-serif;
   font-size: 0.95rem;
 }
 
-.document-preview-date {
-  margin-bottom: 1.5rem;
+.document-preview-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  font-family: var(--font-ui), system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.document-preview-meta > time {
+  flex-shrink: 0;
+}
+
+.article-meta-disclosure {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  min-width: 0;
+  height: 1.2em;
+  overflow: hidden;
+}
+
+.article-meta-toggle {
+  display: inline-grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 1.05rem;
+  height: 1.05rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: color-mix(in srgb, var(--muted) 88%, var(--foreground));
+  line-height: 0;
+  cursor: pointer;
+  transition: color 180ms ease;
+}
+
+.article-meta-info-icon {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+}
+
+.article-meta-toggle:hover,
+.article-meta-disclosure.is-open .article-meta-toggle {
+  color: var(--foreground);
+}
+
+.article-meta-panel {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  min-width: 0;
+  max-width: 0;
+  margin-right: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    max-width 280ms ease,
+    opacity 200ms ease,
+    margin-right 200ms ease;
+}
+
+.article-meta-disclosure.is-open .article-meta-panel {
+  flex: 1;
+  max-width: 100%;
+  margin-right: 0.5rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.article-meta-item {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.article-meta-tags {
+  min-width: 0;
+  flex-shrink: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.article-meta-source {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.article-meta-source:hover {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.article-meta-substack-icon {
+  width: 0.9rem;
+  height: 0.9rem;
+  flex-shrink: 0;
+  opacity: 0.55;
+  transition: opacity 180ms ease;
+}
+
+.article-meta-source:hover .article-meta-substack-icon {
+  opacity: 0.85;
 }
 
 .editor-prose {

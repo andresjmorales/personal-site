@@ -64,6 +64,21 @@ function coerceCanonical(data: Record<string, unknown>): string | null {
   );
 }
 
+/** Rough readable word count from markdown body (strips code/images/markup). */
+export function countWords(markdown: string): number {
+  const text = markdown
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/`[^`]*`/g, " ")
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/[#>*_~\\|[\](){}]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!text) return 0;
+  return text.split(" ").length;
+}
+
 function toMeta(post: Post): PostMeta {
   return {
     slug: post.slug,

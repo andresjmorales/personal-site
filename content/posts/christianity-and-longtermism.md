@@ -7,6 +7,7 @@ description: # A Christian case against longtermism
 tags:
   - theology
   - ea
+  - longtermism
 canonical: https://andresmorales.substack.com/p/christianity-and-longtermism
 ---
 
