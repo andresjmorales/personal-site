@@ -1,6 +1,6 @@
 # Writing posts
 
-Drop BlogIDE / Substack-pasted markdown files here.
+Drop [BlogIDE](https://github.com/andresjmorales/blog-ide)-format (or cleaned Substack-pasted) markdown files here.
 
 Metadata lives in YAML frontmatter at the top of each file (same place BlogIDE already uses for title / subtitle / author). This site reads those fields; BlogIDE is the natural place to *edit* them later (e.g. a kebab-menu “Export for site” that fills `date`, `tags`, `canonical`).
 
