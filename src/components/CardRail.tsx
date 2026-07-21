@@ -61,8 +61,6 @@ export function CardRail({
       dragging: true,
       moved: false,
     };
-    root.setPointerCapture(event.pointerId);
-    root.classList.add("is-dragging");
   }
 
   function handlePointerMove(event: ReactPointerEvent<HTMLDivElement>) {
@@ -75,7 +73,13 @@ export function CardRail({
     }
 
     const dx = event.clientX - state.startX;
-    if (Math.abs(dx) > 3) state.moved = true;
+    if (Math.abs(dx) > 3) {
+      if (!state.moved) {
+        state.moved = true;
+        root.setPointerCapture(event.pointerId);
+        root.classList.add("is-dragging");
+      }
+    }
     root.scrollLeft = state.scrollLeft - dx;
   }
 
