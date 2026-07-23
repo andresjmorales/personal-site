@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "localize-images": "node scripts/localize-substack-images.mjs",
-    "remap-substack-links": "node scripts/remap-substack-links.mjs"
+    "remap-substack-links": "node scripts/remap-substack-links.mjs",
+    "export-absolute": "node scripts/export-absolute-markdown.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

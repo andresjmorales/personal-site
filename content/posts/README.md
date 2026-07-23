@@ -54,6 +54,8 @@ npm run localize-images
 
 That writes files under `public/writing/<slug>/` and rewrites the markdown URLs.
 
+To reverse the direction for paste into Substack / BlogIDE (absolute image + self-link URLs), run `npm run export-absolute` — see the repo root README. Source files stay relative; copies land in `output/`.
+
 ```text
 public/writing/<slug>/hero.jpg
 ```

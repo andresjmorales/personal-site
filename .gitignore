@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# generated absolute-URL markdown (npm run export-absolute)
+/output/
+
 # production
 /build
 

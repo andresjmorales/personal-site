@@ -42,3 +42,18 @@ node scripts/remap-substack-links.mjs           # report
 node scripts/remap-substack-links.mjs --apply   # write
 node scripts/remap-substack-links.mjs --apply --map old-substack-slug=local-slug
 ```
+
+### Export absolute URLs (for Substack / BlogIDE paste)
+
+Source posts keep site-relative `/writing/…` paths. To get a pasteable copy with `https://andresmorales.xyz/…` (or another base) on images and self-links:
+
+```bash
+npm run export-absolute -- <slug>
+npm run export-absolute                 # all posts
+
+# flags (use node directly on Windows — npm may strip --flags):
+node scripts/export-absolute-markdown.mjs --preview
+node scripts/export-absolute-markdown.mjs --self-links=canonical <slug>
+```
+
+Writes to `output/<slug>.md` (gitignored). Edit `scripts/export-absolute.config.json` for `baseUrl`, `selfLinks` (`site` | `canonical`), and optional `pathMaps` overrides.
