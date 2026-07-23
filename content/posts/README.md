@@ -75,7 +75,7 @@ Image made with [DALL·E 2](https://openai.com/dall-e-2/)
 
 ```md
 ![A lamb looking over a fence](/writing/my-essay/lamb.jpg)
-Lao Tzu, founder of Taoism
+A lamb.
 ```
 
 | Markdown | Result |
