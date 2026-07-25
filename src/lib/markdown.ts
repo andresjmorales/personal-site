@@ -19,9 +19,9 @@ function brNode(): Element {
 }
 
 /**
- * Tips live in a <span>; block tags like <p> are invalid there and can make
- * browsers/HTML serializers blow up the rest of the document. Flatten to
- * phrasing content, preserving paragraph breaks as <br><br>.
+ * Tips live in a <span>; block tags like <p>/<ol> are invalid there and can
+ * make browsers hoist content into the essay body. Flatten to phrasing
+ * content, preserving paragraph breaks as <br><br> and lists as "1. …".
  */
 function flattenTipChildren(
   children: Element["children"]
@@ -43,6 +43,23 @@ function flattenTipChildren(
         out.push(brNode(), brNode());
       }
       out.push(...flattenTipChildren(child.children));
+      afterBlock = true;
+      continue;
+    }
+    if (
+      child.type === "element" &&
+      (child.tagName === "ol" || child.tagName === "ul")
+    ) {
+      const items = child.children.filter(
+        (c): c is Element => c.type === "element" && c.tagName === "li"
+      );
+      for (let i = 0; i < items.length; i++) {
+        if (out.length > 0) out.push(brNode());
+        const prefix =
+          child.tagName === "ol" ? `${i + 1}. ` : "• ";
+        out.push({ type: "text", value: prefix });
+        out.push(...flattenTipChildren(items[i].children));
+      }
       afterBlock = true;
       continue;
     }

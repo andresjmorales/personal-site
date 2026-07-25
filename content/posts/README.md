@@ -37,8 +37,18 @@ Essay body with GFM footnotes[^1].
 | `description` | no | Homepage card blurb (else subtitle) |
 | `tags` | no | List or comma-separated; shown in the article ⓘ details |
 | `canonical` | no | Original URL (aliases: `substack`, `source`) |
+| `status` | no | `draft`, `unpublished`, or `hidden` omits the post from the Writing rail; `/writing/<slug>` still works. Other values (or omit) = listed. Unknown keys are ignored safely. |
 
 Supported extensions: `.md`, `.mdx`.
+
+## Drafts
+
+Two ways to keep an essay off the homepage rail while still testing the slug page:
+
+1. **`status: draft`** (also `unpublished` / `hidden`) in frontmatter, even under `content/posts/`.
+2. Put the file in [`content/drafts/`](../drafts/) — never listed, still routed by slug.
+
+If the same slug exists in both folders, `content/posts/` wins.
 
 ## Images
 

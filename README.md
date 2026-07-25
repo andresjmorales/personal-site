@@ -17,7 +17,7 @@ npx next dev --port 3001
 
 ## Content
 
-- **Writing:** drop markdown in `content/posts/`. See [content/posts/README.md](./content/posts/README.md).
+- **Writing:** drop markdown in `content/posts/`. See [content/posts/README.md](./content/posts/README.md). Use `status: draft` or `content/drafts/` to hide from the rail while keeping `/writing/<slug>`.
 - **Projects:** edit the `projects` array in `src/lib/content.ts` (optional image under `public/projects/`).
 
 ### Localize Substack images

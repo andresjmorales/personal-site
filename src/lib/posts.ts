@@ -2,7 +2,14 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 
-const postsDirectory = path.join(process.cwd(), "content", "posts");
+const contentRoot = path.join(process.cwd(), "content");
+const postsDirectory = path.join(contentRoot, "posts");
+const draftsDirectory = path.join(contentRoot, "drafts");
+
+/** Frontmatter statuses that hide a post from the Writing rail (slug still works). */
+const HIDDEN_STATUSES = new Set(["draft", "unpublished", "hidden"]);
+
+export type PostSource = "posts" | "drafts";
 
 export type PostMeta = {
   slug: string;
@@ -14,16 +21,25 @@ export type PostMeta = {
   tags: string[];
   /** Original Substack (or other) URL */
   canonical: string | null;
+  /** Optional publish state; draft/unpublished/hidden are omitted from listings. */
+  status: string | null;
+  /** Which content folder the file was loaded from. */
+  source: PostSource;
 };
 
 export type Post = PostMeta & {
   content: string;
 };
 
-function ensurePostsDir(): void {
-  if (!fs.existsSync(postsDirectory)) {
-    fs.mkdirSync(postsDirectory, { recursive: true });
+function ensureDir(dir: string): void {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
   }
+}
+
+function ensureContentDirs(): void {
+  ensureDir(postsDirectory);
+  ensureDir(draftsDirectory);
 }
 
 function isMarkdownFile(name: string): boolean {
@@ -64,6 +80,12 @@ function coerceCanonical(data: Record<string, unknown>): string | null {
   );
 }
 
+function isHiddenFromListing(post: PostMeta): boolean {
+  if (post.source === "drafts") return true;
+  const status = post.status?.toLowerCase();
+  return Boolean(status && HIDDEN_STATUSES.has(status));
+}
+
 /** Rough readable word count from markdown body (strips code/images/markup). */
 export function countWords(markdown: string): number {
   const text = markdown
@@ -89,11 +111,13 @@ function toMeta(post: Post): PostMeta {
     description: post.description,
     tags: post.tags,
     canonical: post.canonical,
+    status: post.status,
+    source: post.source,
   };
 }
 
-function readPostFile(filename: string): Post {
-  const fullPath = path.join(postsDirectory, filename);
+function readPostFile(dir: string, filename: string, source: PostSource): Post {
+  const fullPath = path.join(dir, filename);
   const raw = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(raw);
   const slug = slugFromFilename(filename);
@@ -109,24 +133,47 @@ function readPostFile(filename: string): Post {
       coerceString(record.description) || coerceString(record.subtitle),
     tags: coerceTags(record.tags),
     canonical: coerceCanonical(record),
+    status: coerceString(record.status),
+    source,
     content,
   };
 }
 
-export function getPostSlugs(): string[] {
-  ensurePostsDir();
-  return fs
-    .readdirSync(postsDirectory)
-    .filter(isMarkdownFile)
-    .map(slugFromFilename);
+function listMarkdownIn(dir: string): string[] {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir).filter(isMarkdownFile);
 }
 
+/**
+ * All posts from posts/ then drafts/ (posts wins on slug collision).
+ * Includes drafts — use getAllPosts() for the Writing rail.
+ */
+function loadAllPostsIncludingDrafts(): Post[] {
+  ensureContentDirs();
+  const bySlug = new Map<string, Post>();
+
+  for (const filename of listMarkdownIn(draftsDirectory)) {
+    const post = readPostFile(draftsDirectory, filename, "drafts");
+    bySlug.set(post.slug, post);
+  }
+  // posts/ overwrites drafts/ for the same slug
+  for (const filename of listMarkdownIn(postsDirectory)) {
+    const post = readPostFile(postsDirectory, filename, "posts");
+    bySlug.set(post.slug, post);
+  }
+
+  return [...bySlug.values()];
+}
+
+export function getPostSlugs(): string[] {
+  return loadAllPostsIncludingDrafts().map((post) => post.slug);
+}
+
+/** Listed Writing cards — excludes content/drafts and status draft/unpublished/hidden. */
 export function getAllPosts(): PostMeta[] {
-  ensurePostsDir();
-  const posts = fs
-    .readdirSync(postsDirectory)
-    .filter(isMarkdownFile)
-    .map((filename) => toMeta(readPostFile(filename)));
+  const posts = loadAllPostsIncludingDrafts()
+    .filter((post) => !isHiddenFromListing(post))
+    .map(toMeta);
 
   return posts.sort((a, b) => {
     if (a.date && b.date) return b.date.localeCompare(a.date);
@@ -137,10 +184,16 @@ export function getAllPosts(): PostMeta[] {
 }
 
 export function getPostBySlug(slug: string): Post | null {
-  ensurePostsDir();
-  const mdPath = path.join(postsDirectory, `${slug}.md`);
-  const mdxPath = path.join(postsDirectory, `${slug}.mdx`);
-  if (fs.existsSync(mdPath)) return readPostFile(`${slug}.md`);
-  if (fs.existsSync(mdxPath)) return readPostFile(`${slug}.mdx`);
+  ensureContentDirs();
+  // Prefer published posts/ over drafts/
+  for (const [dir, source] of [
+    [postsDirectory, "posts"],
+    [draftsDirectory, "drafts"],
+  ] as const) {
+    const mdPath = path.join(dir, `${slug}.md`);
+    const mdxPath = path.join(dir, `${slug}.mdx`);
+    if (fs.existsSync(mdPath)) return readPostFile(dir, `${slug}.md`, source);
+    if (fs.existsSync(mdxPath)) return readPostFile(dir, `${slug}.mdx`, source);
+  }
   return null;
 }

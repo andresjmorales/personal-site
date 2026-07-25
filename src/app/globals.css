@@ -8,6 +8,7 @@
   --border: #404040;
   --panel: #333333;
   --accent: #c45c5c;
+  --fn-link: #6ea8ff;
   --accent-soft: #331a1a;
   --target: #382424;
   --header-bg: rgb(42 42 42 / 88%);
@@ -682,7 +683,7 @@ a {
 
 .preview-fn-ref {
   margin: 0 0.08em;
-  color: var(--accent);
+  color: var(--fn-link);
   font-family: var(--font-ui), system-ui, sans-serif;
   font-size: 0.7em;
   font-weight: 700;
@@ -749,7 +750,7 @@ a {
 }
 
 .preview-fn-tip a {
-  color: var(--accent);
+  color: var(--fn-link);
 }
 
 .preview-fn-tip em {
@@ -765,11 +766,7 @@ a {
   font-size: 0.9em;
 }
 
-.preview-fn-tip ul,
-.preview-fn-tip ol {
-  margin: 0.35em 0;
-  padding-left: 1.2em;
-}
+/* Lists are flattened to "1. …" / "• …" phrasing in tip HTML. */
 
 .preview-footnotes {
   margin-top: 2.5rem;
@@ -813,7 +810,7 @@ a {
 }
 
 .preview-footnotes-back {
-  color: var(--accent);
+  color: var(--fn-link);
   font-weight: 650;
   text-decoration: none;
 }
