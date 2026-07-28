@@ -30,9 +30,10 @@ function flattenTipChildren(
   let afterBlock = false;
 
   for (const child of cloneHastChildren(children)) {
-    // Footnote AST often has "\n" text nodes between blocks; ignoring them
+    // Footnote AST often has "\n" text nodes between blocks; ignoring those
     // prevents a leading <br><br> (extra top whitespace) in every tip.
-    if (child.type === "text" && !child.value.trim()) {
+    // Keep ordinary spaces (e.g. between adjacent <em> runs).
+    if (child.type === "text" && /^\n+$/.test(child.value)) {
       continue;
     }
     if (

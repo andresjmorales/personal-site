@@ -8,7 +8,7 @@
   --border: #404040;
   --panel: #333333;
   --accent: #c45c5c;
-  --fn-link: #6ea8ff;
+  --fn-link: var(--accent);
   --accent-soft: #331a1a;
   --target: #382424;
   --header-bg: rgb(42 42 42 / 88%);
@@ -148,6 +148,54 @@ a {
   line-height: 1.15;
 }
 
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-heading .section-title {
+  margin-bottom: 0;
+}
+
+.view-switcher {
+  display: inline-flex;
+  flex-shrink: 0;
+  gap: 0.15rem;
+  margin-top: 0.2rem;
+}
+
+.view-switcher-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: color-mix(in srgb, var(--muted) 70%, transparent);
+  cursor: pointer;
+  transition: color 160ms ease, background 160ms ease;
+}
+
+.view-switcher-btn:hover {
+  color: var(--muted);
+  background: color-mix(in srgb, var(--muted) 12%, transparent);
+}
+
+.view-switcher-btn.is-active {
+  color: color-mix(in srgb, var(--muted) 92%, var(--foreground));
+}
+
+.view-switcher-btn:focus-visible {
+  outline: 1px solid var(--muted);
+  outline-offset: 2px;
+}
+
 .about-copy {
   max-width: 40rem;
   font-family: var(--font-display), Georgia, serif;
@@ -186,33 +234,57 @@ a {
   -webkit-overflow-scrolling: touch;
 }
 
+.project-scroll--wrap,
+.writing-scroll--wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 160px), 1fr));
+  gap: 1rem;
+  overflow: visible;
+  overscroll-behavior-x: auto;
+  scroll-snap-type: none;
+  cursor: default;
+}
+
+@media (min-width: 640px) {
+  .project-scroll--wrap,
+  .writing-scroll--wrap {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
 @media (hover: hover) and (pointer: fine) {
-  .project-scroll,
-  .writing-scroll {
+  .project-scroll:not(.project-scroll--wrap),
+  .writing-scroll:not(.writing-scroll--wrap) {
     cursor: grab;
   }
 
-  .project-scroll.is-dragging,
-  .writing-scroll.is-dragging {
+  .project-scroll:not(.project-scroll--wrap).is-dragging,
+  .writing-scroll:not(.writing-scroll--wrap).is-dragging {
     cursor: grabbing;
     user-select: none;
     scroll-snap-type: none;
   }
 
-  .project-scroll a,
-  .writing-scroll a {
+  .project-scroll:not(.project-scroll--wrap) a,
+  .writing-scroll:not(.writing-scroll--wrap) a {
     cursor: pointer;
   }
 
-  .project-scroll.is-dragging a,
-  .writing-scroll.is-dragging a {
+  .project-scroll:not(.project-scroll--wrap).is-dragging a,
+  .writing-scroll:not(.writing-scroll--wrap).is-dragging a {
     cursor: grabbing;
   }
 }
 
 .project-scroll-item {
-  flex: 0 0 min(260px, 78vw);
+  flex: 0 0 min(280px, 82vw);
   scroll-snap-align: start;
+  min-width: 0;
+}
+
+.project-scroll--wrap .project-scroll-item {
+  flex: unset;
+  scroll-snap-align: unset;
 }
 
 .project-scroll-item .project-card {
@@ -291,9 +363,15 @@ a {
   line-height: 1.5;
 }
 
-.project-card-github {
-  align-self: flex-start;
+.project-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
   margin: 0.35rem 1rem 1rem;
+}
+
+.project-card-github {
   color: var(--accent);
   font-family: var(--font-ui), system-ui, sans-serif;
   font-size: 0.82rem;
@@ -305,11 +383,38 @@ a {
   text-decoration: underline;
 }
 
+.project-card-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  color: color-mix(in srgb, var(--muted) 88%, transparent);
+  font-family: var(--font-ui), system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.project-card-stars:hover {
+  color: var(--muted);
+}
+
+.project-card-stars-icon {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
 /* ——— Writing cards ——— */
 
 .writing-scroll-item {
   flex: 0 0 min(280px, 82vw);
   scroll-snap-align: start;
+  min-width: 0;
+}
+
+.writing-scroll--wrap .writing-scroll-item {
+  flex: unset;
+  scroll-snap-align: unset;
 }
 
 .writing-scroll-item .writing-card {
