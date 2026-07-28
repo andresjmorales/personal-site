@@ -1,12 +1,16 @@
-import { CardRail } from "@/components/CardRail";
 import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
+import { SectionRail } from "@/components/SectionRail";
 import { WritingCard } from "@/components/WritingCard";
 import { about, links, projects } from "@/lib/content";
+import { fetchGithubStarsMap } from "@/lib/github";
 import { getAllPosts } from "@/lib/posts";
 
-export default function HomePage() {
+export default async function HomePage() {
   const posts = getAllPosts();
+  const starsByUrl = await fetchGithubStarsMap(
+    projects.map((project) => project.github)
+  );
 
   return (
     <>
@@ -36,33 +40,43 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="projects" className="section">
-          <h2 className="section-title">Projects</h2>
-          <CardRail className="project-scroll" role="list">
-            {projects.map((project) => (
-              <div key={project.slug} className="project-scroll-item" role="listitem">
-                <ProjectCard project={project} />
-              </div>
-            ))}
-          </CardRail>
-        </section>
+        <SectionRail
+          id="projects"
+          title="Projects"
+          railClassName="project-scroll"
+        >
+          {projects.map((project) => (
+            <div
+              key={project.slug}
+              className="project-scroll-item"
+              role="listitem"
+            >
+              <ProjectCard
+                project={project}
+                stars={
+                  project.github ? starsByUrl.get(project.github) : undefined
+                }
+              />
+            </div>
+          ))}
+        </SectionRail>
 
-        <section id="writing" className="section">
-          <h2 className="section-title">Writing</h2>
-          {posts.length > 0 ? (
-            <CardRail className="writing-scroll" role="list">
-              {posts.map((post) => (
-                <div
-                  key={post.slug}
-                  className="writing-scroll-item"
-                  role="listitem"
-                >
-                  <WritingCard post={post} />
-                </div>
-              ))}
-            </CardRail>
-          ) : null}
-        </section>
+        <SectionRail
+          id="writing"
+          title="Writing"
+          railClassName="writing-scroll"
+          hasItems={posts.length > 0}
+        >
+          {posts.map((post) => (
+            <div
+              key={post.slug}
+              className="writing-scroll-item"
+              role="listitem"
+            >
+              <WritingCard post={post} />
+            </div>
+          ))}
+        </SectionRail>
 
         <section id="links" className="section">
           <h2 className="section-title">Links</h2>
