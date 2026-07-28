@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { CardRail } from "@/components/CardRail";
 
 export type RailView = "rail" | "wrap";
@@ -14,6 +14,27 @@ type SectionRailProps = {
   /** When false, renders heading only (no list / switcher). */
   hasItems?: boolean;
 };
+
+function storageKeyFor(id: string) {
+  return `section-rail-view:${id}`;
+}
+
+function readStoredView(id: string): RailView | null {
+  try {
+    const stored = localStorage.getItem(storageKeyFor(id));
+    return stored === "rail" || stored === "wrap" ? stored : null;
+  } catch {
+    return null;
+  }
+}
+
+function writeStoredView(id: string, view: RailView) {
+  try {
+    localStorage.setItem(storageKeyFor(id), view);
+  } catch {
+    /* private mode / quota */
+  }
+}
 
 function RailIcon() {
   return (
@@ -55,11 +76,22 @@ export function SectionRail({
   children,
   hasItems = true,
 }: SectionRailProps) {
+  // Default "rail" for SSR/hydration; restore from localStorage after mount.
   const [view, setView] = useState<RailView>("rail");
   const isRail = view === "rail";
   const listClassName = isRail
     ? railClassName
     : `${railClassName} ${railClassName}--wrap`;
+
+  useEffect(() => {
+    const stored = readStoredView(id);
+    if (stored) setView(stored);
+  }, [id]);
+
+  function selectView(next: RailView) {
+    setView(next);
+    writeStoredView(id, next);
+  }
 
   return (
     <section id={id} className="section">
@@ -76,7 +108,7 @@ export function SectionRail({
               className={`view-switcher-btn${isRail ? " is-active" : ""}`}
               aria-pressed={isRail}
               aria-label="Scroll rail view"
-              onClick={() => setView("rail")}
+              onClick={() => selectView("rail")}
             >
               <RailIcon />
             </button>
@@ -85,7 +117,7 @@ export function SectionRail({
               className={`view-switcher-btn${!isRail ? " is-active" : ""}`}
               aria-pressed={!isRail}
               aria-label="Wrapped grid view"
-              onClick={() => setView("wrap")}
+              onClick={() => selectView("wrap")}
             >
               <WrapIcon />
             </button>
