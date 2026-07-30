@@ -273,10 +273,10 @@ Read apart from the *Tao*, this could collapse into individualism. But anchored 
 [^4]: Substack estimates this post takes an hour to read.
 [^5]: I like to poke fun of my dad for this—one of my favorite *The Onion* skits to share with my family is “[How Will The End Of Print Journalism Affect Old Loons Who Hoard Newspapers?](https://www.youtube.com/watch?v=mFFGW8DLBrw)”
 [^6]: Because of my dad I’m also a recovering news junkie (or, *ex-infovore*). Now I feel that longform content on Substack or in magazines is better than traditional news.
-[^7]: Some other favorites: *Mutts*, *Get Fuzzy*, *The* *Far Side*, *Zits*, *Garfield* (but only the old *Garfield*). And it’d be criminal to not mention the entire *Calvin and Hobbes* collection.
+[^7]: Some other favorites: *Mutts*, *Get Fuzzy*, *The Far Side*, *Zits*, *Garfield* (but only the old *Garfield*). And it’d be criminal to not mention the entire *Calvin and Hobbes* collection.
 [^8]: “Experimental” in my title has two meanings—the graphic novel itself is experimental, and this book review is also experimental (for me).
 [^9]: [This one](https://www.tcj.com/adult-comics/) from *The Comics Journal* is good.
-[^10]: Carson Grubaugh, *TAOMDE*/ *The Abolition of Man: Deluxe Edition*(St. Paul, Minnesota: Living the Line, 2023), back cover.
+[^10]: Carson Grubaugh, *TAOMDE / The Abolition of Man: Deluxe Edition* (St. Paul, Minnesota: Living the Line, 2023), back cover.
 [^11]: I only have one physical individual issue of the series, the first one. I thought maybe it would increase in value, but so far it hasn’t really.
 [^12]: Six is the [number of man](https://www.iswasandwillbe.com/numbers_six/).
 [^13]: Carson Grubaugh, “Information” (2007).
@@ -309,7 +309,7 @@ Read apart from the *Tao*, this could collapse into individualism. But anchored 
 [^40]: John Henry Newman, “An Essay on the Development of Christian Doctrine,” found through [this essay](https://www.wordonfire.org/articles/quoting-in-context-a-practical-consideration-for-evangelization/).
 [^41]: The [Thirty-Nine Articles](https://www.anglicancommunion.org/media/109014/Thirty-Nine-Articles-of-Religion.pdf) are fairly conservative and orthodox, but not as binding in a confessional sense from what I can tell. In practice enforcement varies by communion and province.
 [^42]: Joe Rigney, *The Things of Earth: Treasuring God by Enjoying His Gifts* (Moscow, ID: Canon Press, 2024), 137.
-[^43]: C.S. Lewis, *Mere Christianity*(New York, NY: HarperCollins, 2009), 64.
+[^43]: C.S. Lewis, *Mere Christianity* (New York, NY: HarperCollins, 2009), 64.
 [^44]: I’m not going to list out all the problems with their methods, sometimes [called](https://clearlyreformed.org/on-culture-war-doug-wilson-and-the-moscow-mood/) the “Moscow Mood.” If you’re interested, there’s plenty of criticism out there.
 [^45]: “[Statement on Natural Affection](https://natural-affections.com/).”
 [^46]: You can find a summary of J.D. Vance’s comments from earlier this year [here](https://www.thepoke.com/2025/01/31/jd-vance-trolled-rory-stewart-for-having-a-low-iq-and-his-comeback-had-brits-everywhere-cheering/) and some commentary [here](https://christandcounterfactuals.substack.com/p/the-ordo-amoris-has-an-important).
