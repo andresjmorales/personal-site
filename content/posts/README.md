@@ -37,6 +37,7 @@ Essay body with GFM footnotes[^1].
 | `description` | no | Homepage card blurb (else subtitle) |
 | `tags` | no | List or comma-separated; shown in the article ⓘ details |
 | `canonical` | no | Original URL (aliases: `substack`, `source`) |
+| `publication` | no | Free-text venue / magazine / paper (BlogIDE metadata only; this site ignores it) |
 | `status` | no | `draft`, `unpublished`, or `hidden` omits the post from the Writing rail; `/writing/<slug>` still works. Other values (or omit) = listed. Unknown keys are ignored safely. |
 
 Supported extensions: `.md`, `.mdx`.
