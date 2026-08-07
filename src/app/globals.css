@@ -881,7 +881,7 @@ a {
   margin-top: 2.5rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--border);
-  font-family: var(--font-ui), system-ui, sans-serif;
+  font-family: var(--font-prose), Georgia, "Times New Roman", serif;
   font-size: 0.875rem;
 }
 
