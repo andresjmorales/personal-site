@@ -37,13 +37,13 @@ El tlacuache lloró otra vez y regresó a su hogar.
 
 En los siguientes días, el tlacuache vio a los otros animales relajándose y comiendo la comida que su hermano había compartido. Entonces sintió celos, y fue al arbusto de las moras mágicas, y tomó una rama con moras con su cola.
 
-Cuando regresó al bosque con la rama, el tlacuache encontró un mapache comiendo un zapote. El mapache también tenía otra comida que el hermano del tlacuache le había dado. El tlacuache tomó una mora de la rama en la mano, y ofreció al mapache la mora a cambio para un pedazo de zapote. El mapache la tomó y comió y se desmayó. El tlacuache robó el resto de la comida del mapache.
+Cuando regresó al bosque con la rama, el tlacuache encontró un mapache comiendo una papaya. El mapache también tenía comida que el hermano del tlacuache le había dado. El tlacuache tomó una mora de la rama en la mano, y le ofreció al mapache la mora a cambio de un pedazo de papaya. El mapache la tomó, comió, y se desmayó. Entonces el tlacuache robó el resto de la comida del mapache.
 
-Luego, el tlacuache encontró un pizote con comida que su hermano le había dado. El pizote estaba comiendo una guayaba. El tlacuache aplastó una mora y puso el jugo de la mora en su pedazo de zapote. Ofreció el pedazo de zapote al pizote, y el pizote lo comió y se desmayó, y el tlacuache robó el resto de la comida del pizote también.
+Luego, el tlacuache encontró un pizote comiendo una zapote. Él también tenía comida que el hermano del tlacuache le había dado. Otra vez, el tlacuache tomó una mora de la rama en la mano, y le ofreció al pizote la mora a cambio de un pedazo de zapote. El pizote la tomó, comió, y se desmayó. Entonces el tlacuache robó el resto de la comida del pizote.
 
-Finalmente, el tlacuache encontró una guacamaya en un árbol con comida que su hermano le había dado. El tlacuache aplastó una mora y puso el jugo de la mora en su guayaba nueva. El tlacuache subió, ofreció la guayaba a la guacamaya, y la guacamaya la comió y se desmayó y cayó del árbol, y el tlacuache robó el resto de la comida de la guacamaya, y huyó.
+Finalmente, el tlacuache encontró una guacamaya en un árbol comiendo una guayaba. La guacamaya tenía comida que el hermano del tlacuache le había dado. El tlacuache subió el árbol, ofreció a la guacamaya la mora a cambio de un pedazo de guayaba. La guacamaya la tomó, comió, se desmayó y cayó del árbol. El tlacuache robó el resto de la comida de la guacamaya y huyó.
 
-Después de todo esto, el tlacuache regresó a su hogar en el tronco hueco con toda la comida. Cuando los otros animales despertaron, se reunieron y hablaron de cómo el tlacuache los había engañado. Fueron al zopilote, y explicaron todo.
+Después de todo esto, el tlacuache regresó a su hogar en el tronco hueco con toda la comida, y aplastó todas las moras y las escondió abajo de hojas secas. Cuando los otros animales despertaron, se reunieron y hablaron de cómo el tlacuache los había engañado. Fueron al zopilote, y explicaron todo.
 
 El zopilote se enojó, y visitó al tlacuache en su tronco hueco, y pronunció una maldición:
 
