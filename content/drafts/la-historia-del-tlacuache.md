@@ -3,7 +3,7 @@ title: La historia del tlacuache
 subtitle:
 author: Andrés Morales
 publication:
-date: 026-08-08
+date: 2026-08-08
 description:
 tags:
 canonical:
