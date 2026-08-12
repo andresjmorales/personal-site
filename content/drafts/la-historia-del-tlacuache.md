@@ -39,9 +39,9 @@ En los siguientes días, el tlacuache vio a los otros animales relajándose y co
 
 Cuando regresó al bosque con la rama, el tlacuache encontró un mapache comiendo un zapote. El mapache también tenía otra comida que el hermano del tlacuache le había dado. El tlacuache tomó una mora de la rama en la mano, y ofreció al mapache la mora a cambio para un pedazo de zapote. El mapache la tomó y comió y se desmayó. El tlacuache robó el resto de la comida del mapache.
 
-Luego, el tlacuache encontró un pizote con comida que su hermano le había dado. El pizote estaba comiendo una guava. El tlacuache aplastó una mora y puso el jugo de la mora en su pedazo de zapote. Ofreció el pedazo de zapote al pizote, y el pizote lo comió y se desmayó, y el tlacuache robó el resto de la comida del pizote también.
+Luego, el tlacuache encontró un pizote con comida que su hermano le había dado. El pizote estaba comiendo una guayaba. El tlacuache aplastó una mora y puso el jugo de la mora en su pedazo de zapote. Ofreció el pedazo de zapote al pizote, y el pizote lo comió y se desmayó, y el tlacuache robó el resto de la comida del pizote también.
 
-Finalmente, el tlacuache encontró una guacamaya en un árbol con comida que su hermano le había dado. El tlacuache aplastó una mora y puso el jugo de la mora en su guava nueva. El tlacuache subió, ofreció la guava a la guacamaya, y la guacamaya la comió y se desmayó y cayó del árbol, y el tlacuache robó el resto de la comida de la guacamaya, y huyó.
+Finalmente, el tlacuache encontró una guacamaya en un árbol con comida que su hermano le había dado. El tlacuache aplastó una mora y puso el jugo de la mora en su guayaba nueva. El tlacuache subió, ofreció la guayaba a la guacamaya, y la guacamaya la comió y se desmayó y cayó del árbol, y el tlacuache robó el resto de la comida de la guacamaya, y huyó.
 
 Después de todo esto, el tlacuache regresó a su hogar en el tronco hueco con toda la comida. Cuando los otros animales despertaron, se reunieron y hablaron de cómo el tlacuache los había engañado. Fueron al zopilote, y explicaron todo.
 
