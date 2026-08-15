@@ -39,7 +39,7 @@ En los siguientes días, el tlacuache vio a los otros animales relajándose y co
 
 Cuando regresó al bosque con la rama, el tlacuache encontró un mapache que tenía comida que el hermano del tlacuache le había dado. El tlacuache tomó una mora de la rama en la mano, y se la ofreció al mapache. El mapache la tomó, comió, y se desmayó. Entonces el tlacuache robó el resto de la comida del mapache.
 
-Luego, el tlacuache encontró un pizote que también tenía comida que el hermano del tlacuache le había dado. Otra vez, el tlacuache tomó una mora de la rama en la mano, y se la ofreció al pizote. El pizote la tomó, comió, y se desmayó. Entonces el tlacuache robó el resto de la comida del pizote.
+Luego, el tlacuache encontró un pizote que también tenía comida que el hermano del tlacuache le había dado. El tlacuache tomó una mora de la rama en la mano, y se la ofreció al pizote. El pizote la tomó, comió, y se desmayó. Entonces el tlacuache robó el resto de la comida del pizote.
 
 Finalmente, el tlacuache encontró una guacamaya en un árbol. La guacamaya tenía comida que el hermano del tlacuache le había dado. El tlacuache subió el árbol, tomó una mora de la rama en la mano, y se la ofreció a la guacamaya. La guacamaya la tomó, comió, se desmayó y cayó del árbol. El tlacuache robó el resto de la comida de la guacamaya y huyó.
 
@@ -47,13 +47,13 @@ Después de todo esto, el tlacuache regresó a su hogar en el tronco hueco con t
 
 El zopilote se enojó, y visitó al tlacuache en su tronco hueco, y pronunció una maldición:
 
-—Tus manos todavía están sucias con el jugo de moras y la tierra de la tumba de tu hermano. Ahora permanecerán sucias para que todos las vean. Engañaste a otros animales con las moras que te dije que no tocaras. Ahora te vas a desmayar en los momentos menos oportunos, como los animales a los que engañaste con las moras, tú y tus hijos. Además, para ti y solo para ti, nunca puedes morir de verdad. Vas a vivir la vida eterna en esta tierra, y nunca vas a reunirte con tu hermano que está viviendo en el paraíso.
+—Tus manos todavía están sucias con el jugo de moras y la tierra de la tumba de tu hermano. Ahora permanecerán sucias para que todos las vean. Engañaste a otros animales con las moras que te dije que no tocaras. Ahora te vas a desmayar en los momentos menos oportunos, como los animales a los que engañaste con las moras, tú y tus hijos. Además, para ti y solo para ti, nunca podrás morir de verdad. Vas a vivir la vida eterna en esta tierra, y nunca vas a reunirte con tu hermano en el otro mundo.
 
 —¡Pero eso es muy cruel!
 
 —Puedes romper esta maldición de una manera. Si cambias tu forma de ser y vives toda tu vida ayudando a todos los otros animales, y si alcanzas la nobleza de tu hermano en muchos años, entonces, puedes morir finalmente y ver a tu hermano otra vez.
 
-—Extraño mucho a mi hermano. Entiendo que mis acciones eran malas. Pero tu oferta es bastante difícil porque los otros animales no confían en mí, y no van a aceptar mi ayuda, entonces va a tomar mucho tiempo.
+—Extraño mucho a mi hermano. Pero los otros animales no confían en mí, y no van a aceptar mi ayuda, entonces va a tomar mucho tiempo.
 
 El zopilote se fue volando, dejando al tlacuache en silencio.
 
