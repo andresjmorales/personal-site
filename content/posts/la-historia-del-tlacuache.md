@@ -3,15 +3,15 @@ title: La historia del tlacuache
 subtitle:
 author: Andrés Morales
 publication:
-date: 2026-08-08
+date: 2026-08-17
 description:
 tags:
 canonical:
-status: draft
+status: public
 spellcheck_langs: es
 ---
 
-Érase una vez que había muchos animales viviendo en el bosque. Todos los animales que vivían en el bosque se respetaban unos a otros. Había dos tlacuaches que eran hermanos. El hermano mayor era muy noble y cariñoso con todos los otros animales en el bosque. El hermano menor solo pensaba en sí mismo.
+Érase una vez un bosque donde vivían muchos animales. Todos los animales se respetaban unos a otros. Había dos tlacuaches que eran hermanos. El hermano mayor era muy noble y cariñoso con todos los otros animales en el bosque. El hermano menor solo pensaba en sí mismo.
 
 Un día, después de un incendio en el bosque, no había nada de comida para muchos animales. El hermano mayor estaba preparado para un desastre, y había guardado mucha comida seca en un hoyo a salvo del fuego. Así que compartió toda su comida guardada con los otros animales, hasta que no le quedó nada.
 
@@ -55,4 +55,4 @@ El zopilote se enojó, y visitó al tlacuache en su tronco hueco, y pronunció 
 
 El zopilote se fue volando, dejando al tlacuache en silencio.
 
-Hasta el día de hoy, todos los tlacuaches se desmayan en los peores momentos. Algunos animales dicen que a veces cuando despiertan de dormir, comida aparece por arte de magia, y a veces ven una criatura con las manos negras huyendo hacia los arbustos.
+Hasta el día de hoy, todos los tlacuaches se desmayan en los peores momentos. Algunos animales dicen que a veces cuando despiertan, aparece comida por arte de magia, y a veces ven una criatura con las manos negras huyendo hacia los arbustos.
