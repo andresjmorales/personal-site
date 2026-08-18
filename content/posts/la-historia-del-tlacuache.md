@@ -11,7 +11,7 @@ status: public
 spellcheck_langs: es
 ---
 
-Érase una vez un bosque donde vivían muchos animales. Todos los animales se respetaban unos a otros. Había dos tlacuaches que eran hermanos. El hermano mayor era muy noble y cariñoso con todos los otros animales en el bosque. El hermano menor solo pensaba en sí mismo.
+Érase una vez un bosque donde vivían muchos animales. Todos los animales se respetaban unos a otros. Había dos tlacuaches hermanos que vivían en un tronco hueco. El hermano mayor era muy noble y cariñoso con todos los otros animales en el bosque. El hermano menor solo pensaba en sí mismo.
 
 Un día, después de un incendio en el bosque, no había nada de comida para muchos animales. El hermano mayor estaba preparado para un desastre, y había guardado mucha comida seca en un hoyo a salvo del fuego. Así que compartió toda su comida guardada con los otros animales, hasta que no le quedó nada.
 
@@ -39,9 +39,9 @@ En los siguientes días, el tlacuache vio a los otros animales descansando y com
 
 Cuando regresó al bosque con la rama, el tlacuache encontró un pizote que todavía tenía comida del hermano mayor. El tlacuache tomó una mora de la rama con la mano, y se la ofreció al pizote. El pizote la tomó, comió, y se desmayó. Entonces el tlacuache robó la comida del pizote.
 
-El tlacuache siguió caminando en el bosque, encontrando animales, engañándolos y robando su comida de la misma manera.
+El tlacuache siguió caminando en el bosque, encontrando animales, engañándolos y robando su comida de la misma manera, hasta que la rama quedó sin moras.
 
-Después de todo esto, el tlacuache regresó a su hogar en el tronco hueco con toda la comida. Aplastó todas las moras y las escondió debajo de las hojas secas. Cuando los otros animales despertaron, se reunieron y hablaron de cómo el tlacuache los había engañado. Fueron al zopilote, y explicaron todo.
+Después de todo esto, el tlacuache regresó a su tronco hueco con toda la comida y descansó. Cuando los otros animales despertaron, se reunieron y hablaron de cómo el tlacuache los había engañado. Fueron al zopilote y explicaron todo.
 
 El zopilote se enojó, y visitó al tlacuache en su tronco hueco, y pronunció una maldición:
 
@@ -52,6 +52,10 @@ El zopilote se enojó, y visitó al tlacuache en su tronco hueco, y pronunció 
 —Puedes romper esta maldición de una manera. Si cambias tu forma de ser y vives toda tu vida ayudando a todos los otros animales, y si alcanzas la nobleza de tu hermano en muchos años, entonces, podrás morir finalmente y ver a tu hermano otra vez.
 
 —Extraño mucho a mi hermano. Entiendo tu trato, pero los otros animales no confían en mí y no van a aceptar mi ayuda, entonces va a tomar mucho tiempo.
+
+El zopilote se fue volando, dejando al tlacuache en silencio.
+
+Hasta el día de hoy, todos los tlacuaches se desmayan en los peores momentos. Algunos animales dicen que a veces cuando despiertan, aparece comida por arte de magia, y a veces ven una criatura con las manos negras huyendo hacia los arbustos.
 
 El zopilote se fue volando, dejando al tlacuache en silencio.
 
