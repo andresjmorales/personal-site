@@ -56,7 +56,3 @@ El zopilote se enojó, y visitó al tlacuache en su tronco hueco, y pronunció 
 El zopilote se fue volando, dejando al tlacuache en silencio.
 
 Hasta el día de hoy, todos los tlacuaches se desmayan en los peores momentos. Algunos animales dicen que a veces cuando despiertan, aparece comida por arte de magia, y a veces ven una criatura con las manos negras huyendo hacia los arbustos.
-
-El zopilote se fue volando, dejando al tlacuache en silencio.
-
-Hasta el día de hoy, todos los tlacuaches se desmayan en los peores momentos. Algunos animales dicen que a veces cuando despiertan, aparece comida por arte de magia, y a veces ven una criatura con las manos negras huyendo hacia los arbustos.
