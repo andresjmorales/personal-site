@@ -749,9 +749,26 @@ a {
   text-decoration: none;
 }
 
-.editor-prose a:hover:not(.preview-fn-ref) {
+.editor-prose a:hover:not(.preview-fn-ref):not(.fb-enhancer-link) {
   text-decoration: underline;
   text-underline-offset: 0.15em;
+}
+
+.editor-prose a.fb-enhancer-link {
+  color: inherit;
+  background: none;
+  background-color: transparent;
+  text-decoration: underline dotted;
+  text-decoration-color: color-mix(in srgb, var(--muted) 50%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  white-space: nowrap;
+}
+
+.editor-prose a.fb-enhancer-link:hover {
+  color: inherit;
+  text-decoration: underline dotted;
+  text-decoration-color: color-mix(in srgb, var(--foreground) 42%, transparent);
 }
 
 .editor-prose pre {
@@ -876,6 +893,36 @@ a {
 }
 
 /* Lists are flattened to "1. …" / "• …" phrasing in tip HTML. */
+
+.fb-enhancer-hover.fetch-bible.no-chapters {
+  width: 350px;
+  max-width: min(350px, calc(100dvw - 1.5rem));
+  max-height: min(16rem, 50dvh);
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--foreground);
+  font-family: var(--font-prose), Georgia, "Times New Roman", serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.45;
+  text-align: left;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 35%);
+}
+
+.fb-enhancer-hover.fetch-bible.no-chapters .fb-chapter,
+.fb-enhancer-hover.fetch-bible.no-chapters .fb-p {
+  margin: 0;
+}
+
+.fb-enhancer-hover.fetch-bible.no-chapters .fb-attribution {
+  margin: 0.45em 0 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-align: right;
+  opacity: 1;
+}
 
 .preview-footnotes {
   margin-top: 2.5rem;

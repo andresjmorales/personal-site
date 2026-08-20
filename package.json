@@ -12,6 +12,8 @@
     "export-absolute": "node scripts/export-absolute-markdown.mjs"
   },
   "dependencies": {
+    "@gracious.tech/fetch-client": "^1.0.0",
+    "@gracious.tech/fetch-enhancer": "^1.1.0",
     "gray-matter": "^4.0.3",
     "next": "16.2.10",
     "react": "19.2.4",
