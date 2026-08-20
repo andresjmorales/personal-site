@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { ArticleBody } from "@/components/ArticleBody";
 import { ArticleMeta } from "@/components/ArticleMeta";
 import { FootnoteTipBounds } from "@/components/FootnoteTipBounds";
 import { Header } from "@/components/Header";
@@ -86,10 +87,7 @@ export default async function WritingPage({ params }: PageProps) {
               canonical={post.canonical}
             />
           </header>
-          <div
-            className="editor-prose"
-            dangerouslySetInnerHTML={{ __html: bodyHtml }}
-          />
+          <ArticleBody html={bodyHtml} />
         </article>
       </main>
     </>
