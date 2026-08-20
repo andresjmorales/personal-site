@@ -1,8 +1,13 @@
 "use client";
 
 import { useEffect } from "react";
+import {
+  BIBLE_TIP_OPEN_CLASS,
+  BIBLE_TIP_WRAP_CLASS,
+} from "@/components/bibleVerseTips";
 
 const EDGE = 12;
+const HOST_SELECTOR = `.preview-fn, .${BIBLE_TIP_WRAP_CLASS}`;
 
 function viewBox() {
   const vv = window.visualViewport;
@@ -16,6 +21,16 @@ function viewBox() {
   return { left: 0, right: window.innerWidth, width: window.innerWidth };
 }
 
+function tipEl(host: HTMLElement): HTMLElement | null {
+  return host.querySelector<HTMLElement>(
+    ":scope > .preview-fn-tip, :scope > .fb-enhancer-hover"
+  );
+}
+
+function isBibleTip(tip: HTMLElement): boolean {
+  return tip.classList.contains("fb-enhancer-hover");
+}
+
 function clearPlacement(tip: HTMLElement): void {
   tip.style.left = "";
   tip.style.right = "";
@@ -24,8 +39,8 @@ function clearPlacement(tip: HTMLElement): void {
   tip.removeAttribute("data-tip-placed");
 }
 
-function placeTip(fn: HTMLElement, force = false): boolean {
-  const tip = fn.querySelector<HTMLElement>(".preview-fn-tip");
+function placeTip(host: HTMLElement, force = false): boolean {
+  const tip = tipEl(host);
   if (!tip) return false;
 
   if (getComputedStyle(tip).display === "none") {
@@ -43,7 +58,8 @@ function placeTip(fn: HTMLElement, force = false): boolean {
   tip.style.transform = "translateX(-50%)";
 
   const view = viewBox();
-  tip.style.maxWidth = `${Math.min(320, view.width - EDGE * 2)}px`;
+  const cap = isBibleTip(tip) ? 350 : 320;
+  tip.style.maxWidth = `${Math.min(cap, view.width - EDGE * 2)}px`;
 
   const tipRect = tip.getBoundingClientRect();
   if (tipRect.width < 1 || tipRect.height < 1) return false;
@@ -55,65 +71,71 @@ function placeTip(fn: HTMLElement, force = false): boolean {
     left = view.right - EDGE - tipRect.width;
   }
 
-  const fnRect = fn.getBoundingClientRect();
-  tip.style.left = `${left - fnRect.left}px`;
+  const hostRect = host.getBoundingClientRect();
+  tip.style.left = `${left - hostRect.left}px`;
   tip.style.transform = "none";
   tip.setAttribute("data-tip-placed", "1");
   return true;
 }
 
-function schedulePlace(fn: HTMLElement): void {
+function schedulePlace(host: HTMLElement): void {
   let tries = 0;
   const tick = () => {
-    if (placeTip(fn) || ++tries > 24) return;
+    if (placeTip(host) || ++tries > 24) return;
     requestAnimationFrame(tick);
   };
   requestAnimationFrame(tick);
 }
 
+function hosts(): NodeListOf<HTMLElement> {
+  return document.querySelectorAll<HTMLElement>(HOST_SELECTOR);
+}
+
 /**
- * Keeps publication footnote hover tips inside the visual viewport
- * (Firefox/Chrome mobile long-press near screen edges).
+ * Keeps publication footnote hover tips (and touch fetch(bible) tips)
+ * inside the visual viewport (Firefox/Chrome mobile long-press near
+ * screen edges).
  */
 export function FootnoteTipBounds() {
   useEffect(() => {
     const onActivate = (event: Event) => {
       const target = event.target;
       if (!(target instanceof Element)) return;
-      const fn = target.closest(".preview-fn");
-      if (!(fn instanceof HTMLElement)) return;
-      // Long-press may paint :hover after this event — retry a few frames.
-      schedulePlace(fn);
+      const host = target.closest(HOST_SELECTOR);
+      if (!(host instanceof HTMLElement)) return;
+      // Long-press may paint :hover / open the tip after this event — retry a few frames.
+      schedulePlace(host);
     };
 
     const onLeave = (event: Event) => {
       const target = event.target;
       if (!(target instanceof Element)) return;
-      const fn = target.closest(".preview-fn");
-      if (!(fn instanceof HTMLElement)) return;
+      const host = target.closest(HOST_SELECTOR);
+      if (!(host instanceof HTMLElement)) return;
+      if (host.classList.contains(BIBLE_TIP_OPEN_CLASS)) return;
       if (
         event instanceof FocusEvent &&
         event.relatedTarget instanceof Node &&
-        fn.contains(event.relatedTarget)
+        host.contains(event.relatedTarget)
       ) {
         return;
       }
       if (
         event instanceof PointerEvent &&
         event.relatedTarget instanceof Node &&
-        fn.contains(event.relatedTarget)
+        host.contains(event.relatedTarget)
       ) {
         return;
       }
-      const tip = fn.querySelector<HTMLElement>(".preview-fn-tip");
+      const tip = tipEl(host);
       if (tip) clearPlacement(tip);
     };
 
     const relocateOpen = () => {
-      document.querySelectorAll<HTMLElement>(".preview-fn").forEach((fn) => {
-        const tip = fn.querySelector<HTMLElement>(".preview-fn-tip");
+      hosts().forEach((host) => {
+        const tip = tipEl(host);
         if (!tip || getComputedStyle(tip).display === "none") return;
-        placeTip(fn, true);
+        placeTip(host, true);
       });
     };
 
@@ -131,11 +153,11 @@ export function FootnoteTipBounds() {
 
     // Sticky :hover on mobile sometimes appears without a new pointer event.
     const poll = window.setInterval(() => {
-      document.querySelectorAll<HTMLElement>(".preview-fn").forEach((fn) => {
-        const tip = fn.querySelector<HTMLElement>(".preview-fn-tip");
+      hosts().forEach((host) => {
+        const tip = tipEl(host);
         if (!tip || getComputedStyle(tip).display === "none") return;
         if (tip.getAttribute("data-tip-placed") === "1") return;
-        placeTip(fn);
+        placeTip(host);
       });
     }, 300);
 
