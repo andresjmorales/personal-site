@@ -31,6 +31,43 @@ function shouldDiscover(element: Element): boolean {
   return true;
 }
 
+function isHoverAttribution(target: EventTarget | null): boolean {
+  return (
+    target instanceof Element &&
+    Boolean(target.closest(".fb-enhancer-hover .fb-attribution"))
+  );
+}
+
+/** The enhancer makes the whole hover a button; keep only the BSB label clickable. */
+function ignoreHoverPassageClicks(event: Event): void {
+  const target = event.target;
+  if (!(target instanceof Element)) return;
+  if (!target.closest(".fb-enhancer-hover")) return;
+  if (isHoverAttribution(target)) return;
+  event.stopPropagation();
+  event.stopImmediatePropagation();
+}
+
+function decorateHoverAttribution(root: ParentNode): void {
+  root.querySelectorAll(".fb-enhancer-hover .fb-attribution").forEach((node) => {
+    if (!(node instanceof HTMLElement) || node.dataset.bibleOpen) return;
+    node.dataset.bibleOpen = "1";
+    node.setAttribute("role", "link");
+    node.setAttribute("title", "Open in fetch(bible)");
+    node.tabIndex = 0;
+  });
+}
+
+function openAttributionWithKeyboard(event: KeyboardEvent): void {
+  if (event.key !== "Enter" && event.key !== " ") return;
+  const target = event.target;
+  if (!(target instanceof HTMLElement)) return;
+  if (!target.classList.contains("fb-attribution")) return;
+  if (!target.closest(".fb-enhancer-hover")) return;
+  event.preventDefault();
+  target.click();
+}
+
 type Props = {
   html: string;
 };
@@ -65,8 +102,19 @@ export function ArticleBody({ html }: Props) {
       return shouldDiscover(element);
     });
 
+    decorateHoverAttribution(document);
+    const observer = new MutationObserver(() => {
+      decorateHoverAttribution(document);
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+    document.addEventListener("click", ignoreHoverPassageClicks, true);
+    document.addEventListener("keydown", openAttributionWithKeyboard, true);
+
     return () => {
       cancelled = true;
+      observer.disconnect();
+      document.removeEventListener("click", ignoreHoverPassageClicks, true);
+      document.removeEventListener("keydown", openAttributionWithKeyboard, true);
       enhancer.hide_app();
       enhancer._app_div.remove();
       for (const [hover] of enhancer._hover_divs) {

@@ -909,6 +909,8 @@ a {
   line-height: 1.45;
   text-align: left;
   box-shadow: 0 8px 24px rgb(0 0 0 / 35%);
+  cursor: text;
+  user-select: text;
 }
 
 .fb-enhancer-hover.fetch-bible.no-chapters .fb-chapter,
@@ -922,6 +924,15 @@ a {
   font-size: 0.75rem;
   text-align: right;
   opacity: 1;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fb-enhancer-hover.fetch-bible.no-chapters .fb-attribution:hover,
+.fb-enhancer-hover.fetch-bible.no-chapters .fb-attribution:focus-visible {
+  color: var(--fn-link);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 .preview-footnotes {
