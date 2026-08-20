@@ -3,7 +3,7 @@ title: La historia del tlacuache
 subtitle:
 author: Andrés Morales
 publication:
-date: 2026-08-17
+date: 2026-08-20
 description:
 tags:
 canonical:
@@ -11,7 +11,7 @@ status: public
 spellcheck_langs: es
 ---
 
-Érase una vez un bosque donde vivían muchos animales. Todos los animales se respetaban unos a otros. Había dos tlacuaches hermanos que vivían en un tronco hueco. El hermano mayor era muy noble y cariñoso con todos los otros animales en el bosque. El hermano menor solo pensaba en sí mismo.
+Érase una vez un bosque donde vivían muchos animales. Todos los animales se respetaban unos a otros. Había dos tlacuaches hermanos que vivían en un tronco hueco. El hermano mayor era muy noble y cariñoso con todos los otros animales. El hermano menor solo pensaba en sí mismo.
 
 Un día, después de un incendio en el bosque, no había nada de comida para muchos animales. El hermano mayor estaba preparado para un desastre, y había guardado mucha comida seca en un hoyo a salvo del fuego. Así que compartió toda su comida guardada con los otros animales, hasta que no le quedó nada.
 
@@ -49,9 +49,9 @@ El zopilote se enojó, y visitó al tlacuache en su tronco hueco, y pronunció 
 
 —¡Pero eso es muy cruel!
 
-—Puedes romper esta maldición de una manera. Si cambias tu forma de ser y vives toda tu vida ayudando a todos los otros animales, y si alcanzas la nobleza de tu hermano en muchos años, entonces, podrás morir finalmente y ver a tu hermano otra vez.
+—Puedes romper esta maldición de una manera. Si cambias tu forma de ser y vives toda tu vida ayudando a todos los otros animales, y si alcanzas la nobleza de tu hermano en muchos años, entonces podrás morir finalmente y ver a tu hermano otra vez.
 
-—Extraño mucho a mi hermano. Entiendo tu trato, pero los otros animales no confían en mí y no van a aceptar mi ayuda, entonces va a tomar mucho tiempo.
+—Extraño mucho a mi hermano. Entiendo tu trato, pero los otros animales no confían en mí y no van a aceptar mi ayuda, entonces va a tardar mucho.
 
 El zopilote se fue volando, dejando al tlacuache en silencio.
 
