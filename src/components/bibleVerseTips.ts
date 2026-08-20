@@ -32,6 +32,7 @@ function openTip(wrap: HTMLElement): void {
   closeOpenTips(wrap);
   wrap.classList.add(BIBLE_TIP_OPEN_CLASS);
   openedAt = Date.now();
+  wrap.dispatchEvent(new PointerEvent("pointerover", { bubbles: true }));
 }
 
 /**

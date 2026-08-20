@@ -896,6 +896,9 @@ a {
 
 .fb-enhancer-wrap {
   position: relative;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: baseline;
 }
 
 .fb-enhancer-wrap > .fb-enhancer-hover.fetch-bible {
