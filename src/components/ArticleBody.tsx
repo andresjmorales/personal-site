@@ -3,6 +3,10 @@
 import { BibleClient } from "@gracious.tech/fetch-client";
 import { BibleEnhancer } from "@gracious.tech/fetch-enhancer";
 import { useEffect, useRef } from "react";
+import {
+  bindTouchVerseTipDismiss,
+  patchEnhancerForTouchTips,
+} from "@/components/bibleVerseTips";
 import { FETCH_BIBLE_TRANSLATION_ID } from "@/lib/bible";
 import "@gracious.tech/fetch-client/client.css";
 import "@gracious.tech/fetch-enhancer/styles.css";
@@ -28,6 +32,8 @@ function shouldDiscover(element: Element): boolean {
   if (SKIP_TAGS.has(element.tagName)) return false;
   if (element.classList.contains("preview-fn")) return false;
   if (element.classList.contains("preview-fn-tip")) return false;
+  if (element.classList.contains("fb-enhancer-wrap")) return false;
+  if (element.classList.contains("fb-enhancer-hover")) return false;
   return true;
 }
 
@@ -96,6 +102,7 @@ export function ArticleBody({ html }: Props) {
       translations: [FETCH_BIBLE_TRANSLATION_ID],
       spaces_to_nbsp: true,
     });
+    patchEnhancerForTouchTips(enhancer);
 
     void enhancer.discover_bible_references(root, (element) => {
       if (cancelled) return false;
@@ -109,10 +116,12 @@ export function ArticleBody({ html }: Props) {
     observer.observe(document.body, { childList: true, subtree: true });
     document.addEventListener("click", ignoreHoverPassageClicks, true);
     document.addEventListener("keydown", openAttributionWithKeyboard, true);
+    const unbindTipDismiss = bindTouchVerseTipDismiss();
 
     return () => {
       cancelled = true;
       observer.disconnect();
+      unbindTipDismiss();
       document.removeEventListener("click", ignoreHoverPassageClicks, true);
       document.removeEventListener("keydown", openAttributionWithKeyboard, true);
       enhancer.hide_app();
